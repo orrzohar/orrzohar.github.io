@@ -1,0 +1,28 @@
+projects:
+  - title: "FOMO"
+    subtitle: "Open World Object Detection in the Era of Foundation Models"
+    url: "projects/fomo"
+    thumbnail: "assets/publications/icons/fomo.jpg"
+    arxiv: "https://arxiv.org/abs/2312.05745"
+    selected: y
+
+  - title: "LOVM"
+    subtitle: "Language-Only Vision Model Selection"
+    url: "projects/lovm"
+    thumbnail: "assets/publications/icons/lovm.png"
+    selected: y
+
+  - title: "PROB"
+    subtitle: "Probabilistic Objectness for Open World Object Detection"
+    thumbnail: "assets/publications/icons/prob.png"
+    url: "projects/prob"
+    selected: y
+
+  - title: "AI-Surgery"
+    subtitle: "Analyzing Surgical Technique in Diverse Open-Surgical Videos with Multi-Task Machine Learning"
+    thumbnail: "assets/publications/icons/surgery.jpg"
+    url: "projects/ai_surgery"
+    selected: n
+
+
+

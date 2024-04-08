@@ -1,0 +1,191 @@
+papers:
+
+  - title: "VideoAgent: Long-form Video Understanding with Large Language Model as Agent"
+    authors: "Xiaohan Wang*, Yuhui Zhang*, <b>Orr Zohar</b>, Serena Yeung-Levy"
+    venue: "arXiv preprint. 2024."
+    arxiv: "https://arxiv.org/abs/2403.10517"
+    paper_pdf: "https://arxiv.org/pdf/2403.10517.pdf"
+    bibtex: |
+      @article{VideoAgent,
+        title={VideoAgent: Long-form Video Understanding with Large Language Model as Agent},
+        author={Wang, Xiaohan and Zhang, Yuhui and Zohar, Orr and Yeung-Levy, Serena},
+        journal={arXiv preprint arXiv:2403.10517},
+        year={2024}
+      }
+    code: "https://github.com/wxh1996/VideoAgent"
+    project: "https://wxh1996.github.io/VideoAgent-Website/"
+    image: "/assets/publications/icons/videoagent.png"
+    selected: y
+    ai: y
+
+
+  - title: "Open World Object Detection in the Era of Foundation Models"
+    authors: "<b>Orr Zohar</b>, Alejandro Lozano, Shelly Goel, Serena Yeung-Levy, Kuan-Chieh Wang"
+    venue: "arXiv preprint. 2023."
+    arxiv: "https://arxiv.org/abs/2312.05745"
+    paper_pdf: "https://arxiv.org/pdf/2312.05745.pdf"
+    bibtex: |
+      @InProceedings{zohar2023fomo,
+        title={Open World Object Detection in the Era of Foundation Models},
+        author={Zohar, Orr and Lozano, Alejandro and Goel, Shelly and Yeung, Serena and Wang, Kuan-Chieh},
+        year={2023},
+        booktitle={arXiv preprint arXiv:2312.05745},
+        arxiv={2312.05745}
+      }
+    code: "https://github.com/orrzohar/FOMO"
+    myproject: "/projects/fomo/"
+    image: "/assets/publications/icons/fomo.jpg"
+    selected: y
+    ai: y
+
+
+  - title: "LOVM: Language-Only Vision Model Selection"
+    authors: "<b>Orr Zohar</b>, Shih-Cheng Huang, Kuan-Chieh Wang, Serena Yeung-Levy"
+    venue: "In Thirty-seventh Conference on Neural Information Processing Systems Datasets and Benchmarks Track 2023"
+    arxiv: "https://arxiv.org/abs/2306.08893"
+    proceedings: "https://proceedings.neurips.cc/paper_files/paper/2023/hash/68c33c4e6fc97f7b31c964dc83303a28-Abstract-Datasets_and_Benchmarks.html"
+    paper_pdf: "https://proceedings.neurips.cc/paper_files/paper/2023/file/68c33c4e6fc97f7b31c964dc83303a28-Paper-Datasets_and_Benchmarks.pdf"
+    bibtex: |
+      @inproceedings{zohar2023lovm,
+        title = {LOVM: Language-Only Vision Model Selection},
+        author = {Zohar, Orr and Huang, Shih-Cheng and Wang, Kuan-Chieh and Yeung, Serena},
+        year = {2023},
+        booktitle = {Thirty-seventh Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+      }
+    code: "https://github.com/orrzohar/LOVM"
+    myproject: "/projects/lovm/"
+    image: "/assets/publications/icons/lovm.png"
+    selected: y
+    ai: y
+
+  - title: "PROB: Probabilistic Objectness for Open World Object Detection"
+    authors: "<b>Orr Zohar</b>, Kuan-Chieh Wang, Serena Yeung-Levy"
+    venue: "In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) "
+    arxiv: "https://arxiv.org/abs/2212.01424"
+    paper_pdf: "https://openaccess.thecvf.com/content/CVPR2023/html/Zohar_PROB_Probabilistic_Objectness_for_Open_World_Object_Detection_CVPR_2023_paper.html"
+    bibtex: |
+      @inproceedings{Zohar_2023_CVPR,
+        title = {PROB: Probabilistic Objectness for Open World Object Detection},
+        author = {Zohar, Orr and Wang, Kuan-Chieh and Yeung, Serena},
+        booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+        month = jun,
+        year = {2023},
+        pages = {11444-11453}
+      }
+    code: "https://github.com/orrzohar/PROB"
+    myproject: "/projects/prob/"
+    image: "/assets/publications/icons/prob.png"
+    selected: y
+    ai: y
+
+  - title: "Analyzing surgical technique in diverse open surgical videos with multitask machine learning"
+    authors: "Emmett D Goodman, Krishna K Patel, Yilun Zhang, William Locke, Chris J Kennedy, Rohan Mehrotra, Stephen Ren, Melody Guan, <b>Orr Zohar</b>, Maren Downing, Hao Wei Chen, Jevin Z Clark, Margaret T Berrigan, Gabriel A Brat, Serena Yeung-Levy"
+    venue: "JAMA Surgery"
+    paper_pdf: "https://jamanetwork.com/journals/jamasurgery/fullarticle/2812760"
+    myproject: "/projects/ai_surgery/"
+    image: "/assets/publications/icons/surgery.jpg"
+    selected: n
+    ai: y
+    bibtex: |
+      @article{goodman2022surgery,
+        title = {Analyzing Surgical Technique in Diverse Open-Surgical Videos with Multi-Task Machine Learning},
+        author = {Goodman, Emmett D. and Patel, Krishna K. and Zhang, Yilun and Locke, William and Kennedy, Chris J. and Mehrotra, Rohan and Ren, Stephen and Guan, Melody Y. and Zohar, Orr and Downing, Maren and Chen, Hao Wei and Clark, Jevin Z. and Brat, Gabriel A. and Yeung, Serena},
+        journal = {JAMA Surgery},
+        issn = {2168-6254},
+        month = dec,
+        year = {2023}
+      }
+
+  - title: "A Multifunctional Electronic Skin Empowered with Damage Mapping and Autonomic Acceleration of Self-Healing in Designated Locations"
+    authors: "Muhammad Khatib, <b>Orr Zohar</b>, Walaa Saliba, Hossam Haick"
+    venue: "Advanced Materials, 2020"
+    journal: "Advanced Materials"
+    volume: "32"
+    number: "17"
+    pages: "2000246"
+    year: "2020"
+    image: "/assets/publications/icons/AdvMat.png"
+    selected: n
+    ai: n
+
+  - title: "Highly Efficient and Water-Insensitive Self-Healing Elastomer for Wet and Underwater Electronics"
+    authors: "Muhammad Khatib, <b>Orr Zohar</b>, Walaa Saliba, Simcha Srebnik, Hossam Haick"
+    venue: "Advanced Functional Materials, 2020"
+    journal: "Advanced Functional Materials"
+    volume: "30"
+    number: "22"
+    pages: "1910196"
+    year: "2020"
+    image: "/assets/publications/icons/afm.jpg"
+    selected: n
+    ai: n
+
+  - title: "Angular Compounding for Speckle Reduction in Optical Coherence Tomography using Geometric Image Registration Algorithm and Digital Focusing"
+    authors: "Jingjing Zhao, Yonatan Winetraub, Edwin Yuan, Warren H Chan, Sumaira Z Aasi, Kavita Y Sarin, <b>Orr Zohar</b>, Adam de la Zerda"
+    venue: "Scientific Reports, 2020"
+    journal: "Scientific Reports"
+    volume: "10"
+    number: "1"
+    pages: "1--11"
+    year: "2020"
+    image: "/assets/publications/icons/scirep.png"
+    selected: n
+    ai: n
+
+  - title: "Epitaxial Superconducting Tunnel Diodes for Light Detection Applications"
+    authors: "Krishna Balasubramanian, John Wright, <b>Orr Zohar</b>, Boaz Taitler, Shlomi Bouscher, Huili Grace Xing, Debdeep Jena, Alex Hayat"
+    venue: "Optical Materials Express, 2020"
+    journal: "Optical Materials Express"
+    volume: "10"
+    number: "7"
+    pages: "1724--1732"
+    year: "2020"
+    image: "/assets/publications/icons/optexpress.png"
+    selected: n
+    ai: n
+
+  - title: "Photoresponse above 85 K of Selective Epitaxy Grown High-Tc Superconducting Microwires"
+    authors: "Xinxi Xing, Krishna Balasubramanian, Shlomi Bouscher, <b>Orr Zohar</b>, Yuval Nitzav, Amit Kanigel, Alex Hayat"
+    venue: "Applied Physics Letters, 2020"
+    journal: "Applied Physics Letters"
+    volume: "117"
+    number: "3"
+    pages: "032602"
+    year: "2020"
+    image: "/assets/publications/icons/apl.jpg"
+    selected: n
+    ai: n
+
+  - title: "Self-Healing Soft Sensors: From Material Design to Implementation"
+    authors: "Muhammad Khatib, <b>Orr Zohar</b>, Hossam Haick"
+    venue: "Advanced Materials, 2021"
+    journal: "Advanced Materials"
+    volume: "33"
+    number: "11"
+    pages: "2170085"
+    year: "2021"
+    image: "/assets/publications/icons/AdvMatRev.jpg"
+    selected: n
+    ai: n
+
+  - title: "Biointerfaced Sensors for Biodiagnostics"
+    authors: "<b>Orr Zohar*</b>, Muhammad Khatib*, Rawan Omar, Rotem Vishinkin, Yoav Y Broza, Hossam Haick"
+    venue: "View, 2021"
+    journal: "View"
+    volume: "2"
+    number: "4"
+    pages: "20200172"
+    year: "2021"
+    image: "/assets/publications/icons/view.png"
+    selected: n
+    ai: n
+
+  - title: "Hierarchical Graphene-Dye Bilayers for Multimodal Optoelectronic Sensing and Decoupling of Complex Stimuli"
+    authors: "Muhammad Khatib, Shelley Rapoport, <b>Orr Zohar</b>, Elias Mansour, Youbin Zheng, Ning Tang, Walaa Saliba, Yana Mulytin, Tan-Phat Huynh, Hossam Haick"
+    venue: "Advanced Materials Technologies, 2022"
+    journal: "Advanced Materials Technologies"
+    pages: "2200920"
+    year: "2022"
+    image: "/assets/publications/icons/amdt.jpg"
+    selected: n
+    ai: n

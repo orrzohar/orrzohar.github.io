@@ -1,0 +1,63 @@
+experiences:
+
+- place: "Meta"
+  time: "2024 - Now"
+  title: "Research Scientist, Intern"
+  subtitle: "GenAI"
+  category: "work"
+
+- place: "Zohar Consulting Services"
+  time: "2023 - Now"
+  title: "President"
+  subtitle: "AI Consulting"
+  category: "work"
+
+- place: "Stanford University"
+  time: "2021 - now"
+  title: "Ph.D. Student & Knight-Hennessy Scholar"
+  subtitle: "MARVL - Medical AI and Computer Vision Lab"
+  category: "school"
+
+- place: "proteanTecs LTD"
+  time: "2020 - 2024"
+  title: "Machine Learning & Algorithms Engineer"
+  subtitle: "AI"
+  category: "work"
+
+- place: "Stanford University"
+  time: "2021 - 2023"
+  title: "MSc. Student"
+  subtitle: "Computer Science"
+  category: "school"
+
+- place: "Technion University"
+  time: "2019 – 2021"
+  title: "MSc. Student"
+  subtitle: "Master of Electrical Engineering"
+  category: "school"
+
+#- place: "Technion - Israel Institute of Technology"
+#  time: "2019 – 2021"
+#  title: "LNBD"
+#  subtitle: "Researcher"
+#  category: "work"
+
+#- place: "Stanford University"
+#  time: "Summer 2018"
+#  title: "Visiting Undergraduate Researcher"
+#  subtitle: "de la Zerda lab"
+#  category: "work"
+
+
+#- place: "Technion - Israel Institute of Technology"
+#  time: "2017 – 2019"
+#  title: "QUAD Laboratory"
+#  subtitle: "Student Research"
+#  category: "work"
+
+#- place: "Technion - Israel Institute of Technology"
+#  time: "2019 – 2021"
+#  title: "B.Sc. Student"
+#  subtitle: "Chemical Engineering"
+#  category: "school"
+
