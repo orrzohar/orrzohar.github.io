@@ -7,7 +7,7 @@ papers:
     bibtex: |
       @article{zohar2024videostar,
         title={Video-STaR: Bootstrapping Weak Video Supervision for Visual Instruction Tuning},
-        author={Zohar, Orr and Wang, Xiaohan and Bitton, Yonatan and Szpektor, Idan and Yeung, Serena-levy},
+        author={Zohar, Orr and Wang, Xiaohan and Bitton, Yonatan and Szpektor, Idan and Yeung-Levy, Serena},
         journal={arXiv preprint arXiv:TBD},
         year={2024}
       }
