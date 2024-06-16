@@ -1,5 +1,22 @@
 papers:
 
+  - title: "Video-STaR: Bootstrapping Weak Video Supervision for Visual Instruction Tuning"
+    authors: "<b>Orr Zohar</b>, Xiaohan Wang, Yonatan Bitton, Idan Szpektor, Serena Yeung-Levy"
+    venue: "arXiv preprint (2024)"
+    arxiv: "/assets/publications/videostar.pdf"
+    bibtex: |
+      @article{zohar2024videostar,
+        title={Video-STaR: Bootstrapping Weak Video Supervision for Visual Instruction Tuning},
+        author={Zohar, Orr and Wang, Xiaohan and Bitton, Yonatan and Szpektor, Idan and Yeung, Serena-levy},
+        journal={arXiv preprint arXiv:TBD},
+        year={2024}
+      }
+    code: "https://github.com/orrzohar/Video-STaR"
+    myproject: "/projects/video-star/"
+    image: "/assets/publications/icons/videostar.png"
+    selected: y
+    ai: y
+
   - title: "VideoAgent: Long-form Video Understanding with Large Language Model as Agent"
     authors: "Xiaohan Wang*, Yuhui Zhang*, <b>Orr Zohar</b>, Serena Yeung-Levy"
     venue: "arXiv preprint (2024)"
@@ -61,6 +78,7 @@ papers:
   - title: "PROB: Probabilistic Objectness for Open World Object Detection"
     authors: "<b>Orr Zohar</b>, Kuan-Chieh Wang, Serena Yeung-Levy"
     venue: "In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2023)"
+    proceedings: "https://openaccess.thecvf.com/content/CVPR2023/html/Zohar_PROB_Probabilistic_Objectness_for_Open_World_Object_Detection_CVPR_2023_paper.html"
     arxiv: "https://arxiv.org/abs/2212.01424"
     paper_pdf: "https://openaccess.thecvf.com/content/CVPR2023/html/Zohar_PROB_Probabilistic_Objectness_for_Open_World_Object_Detection_CVPR_2023_paper.html"
     bibtex: |

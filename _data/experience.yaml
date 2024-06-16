@@ -18,17 +18,18 @@ experiences:
   subtitle: "MARVL - Medical AI and Computer Vision Lab"
   category: "school"
 
-- place: "proteanTecs LTD"
-  time: "2020 - 2024"
-  title: "Machine Learning & Algorithms Engineer"
-  subtitle: "AI"
-  category: "work"
 
 - place: "Stanford University"
   time: "2021 - 2023"
   title: "MSc. Student"
   subtitle: "Computer Science"
   category: "school"
+
+- place: "proteanTecs LTD"
+  time: "2020 - 2024"
+  title: "Machine Learning & Algorithms Engineer"
+  subtitle: "AI"
+  category: "work"
 
 - place: "Technion University"
   time: "2019 – 2021"
