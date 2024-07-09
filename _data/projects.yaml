@@ -1,6 +1,6 @@
 projects:
   - title: "Video-STaR"
-    subtitle: "Open World Object Detection in the Era of Foundation Models"
+    subtitle: "Self-Training Enables Video Instruction Tuning with Any Supervision"
     url: "projects/video-star"
     thumbnail: "assets/publications/icons/video-star.jpg"
     arxiv: "https://arxiv.org/abs/TBD"
