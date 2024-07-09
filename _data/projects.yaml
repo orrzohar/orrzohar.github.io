@@ -3,7 +3,7 @@ projects:
     subtitle: "Self-Training Enables Video Instruction Tuning with Any Supervision"
     url: "projects/video-star"
     thumbnail: "assets/publications/icons/video-star.jpg"
-    arxiv: "https://arxiv.org/abs/TBD"
+    arxiv: "https://arxiv.org/abs/2407.06189"
     selected: y
 
   - title: "FOMO"
