@@ -19,14 +19,14 @@ papers:
 
   - title: "VideoAgent: Long-form Video Understanding with Large Language Model as Agent"
     authors: "Xiaohan Wang*, Yuhui Zhang*, <b>Orr Zohar</b>, Serena Yeung-Levy"
-    venue: "arXiv preprint (2024)"
+    venue: "European Conference on Computer Vision (ECCV)"
     arxiv: "https://arxiv.org/abs/2403.10517"
     paper_pdf: "https://arxiv.org/pdf/2403.10517.pdf"
     bibtex: |
       @article{VideoAgent,
         title={VideoAgent: Long-form Video Understanding with Large Language Model as Agent},
         author={Wang, Xiaohan and Zhang, Yuhui and Zohar, Orr and Yeung-Levy, Serena},
-        journal={arXiv preprint arXiv:2403.10517},
+        journal={European Conference on Computer Vision (ECCV)},
         year={2024}
       }
     code: "https://github.com/wxh1996/VideoAgent"
