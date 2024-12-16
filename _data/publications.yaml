@@ -2,12 +2,12 @@ papers:
   - title: "Apollo: An Exploration of Video Understanding in Large Multimodal Models"
     authors: "<b>Orr Zohar</b>, Xiaohan Wang, Yann Dubois, Nikhil Mehta, Tong Xiao, Philippe Hansen-Estruch, Licheng Yu, Xiaofang Wang, Felix Juefei-Xu, Ning Zhang, Serena Yeung-Levy, and Xide Xia"
     venue: "arXiv preprint (2024)"
-    arxiv: "https://arxiv.org/abs/XXXX.XXXXX"
+    arxiv: "https://arxiv.org/abs/2412.10360"
     bibtex: |
       @article{zohar2024apollo,
         title={Apollo: An Exploration of Video Understanding in Large Multimodal Models},
         author={Zohar, Orr and Wang, Xiaohan and Dubois, Yann and Mehta, Nikhil and Xiao, Tong and Hansen-Estruch, Philippe and Yu, Licheng and Wang, Xiaofang and Juefei-Xu, Felix and Zhang, Ning and Yeung-Levy, Serena and Xia, Xide},
-        journal={arXiv preprint arXiv:XXXX.XXXXX},
+        journal={arXiv preprint arXiv:2412.10360},
         year={2024}
       }
     code: "https://github.com/Apollo-LMMs/Apollo"
