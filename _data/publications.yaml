@@ -10,7 +10,6 @@ papers:
         journal={arXiv preprint arXiv:2412.10360},
         year={2024}
       }
-    code: "https://github.com/Apollo-LMMs/Apollo"
     myproject: "https://apollo-lmms.github.io"
     image: "/assets/publications/icons/apollo.png"
     selected: y
