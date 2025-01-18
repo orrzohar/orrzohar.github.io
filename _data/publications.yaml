@@ -50,6 +50,21 @@ papers:
     selected: y
     ai: y
 
+  - title: "Learnings from Scaling Visual Tokenizers for Reconstruction and Generation"
+    authors: "Philippe Hansen-Estruch, David Yan, Ching-Yao Chung,<b>Orr Zohar</b>, Jialiang Wang, Tingbo Hou, Tao Xu, Sriram Vishwanath, Peter Vajda, Xinlei Chen"
+    venue: "arXiv preprint (2025)"
+    arxiv: "https://arxiv.org/abs/2501.09755"
+    bibtex: |
+      @article{hansenestruch2025vitok,
+        title={Learnings from Scaling Visual Tokenizers for Reconstruction and Generation}, 
+        author={Philippe Hansen-Estruch and David Yan and Ching-Yao Chung and Orr Zohar and Jialiang Wang and Tingbo Hou and Tao Xu and Sriram Vishwanath and Peter Vajda and Xinlei Chen},
+        journal={arXiv preprint arXiv:2501.09755},
+        year={2025}
+      }
+    myproject: "https://philippe-eecs.github.io/vitok/"
+    image: "/assets/publications/icons/vitok.png"
+    selected: y
+    ai: y
 
   - title: "Open World Object Detection in the Era of Foundation Models"
     authors: "<b>Orr Zohar</b>, Alejandro Lozano, Shelly Goel, Serena Yeung-Levy, Kuan-Chieh Wang"
@@ -67,7 +82,7 @@ papers:
     code: "https://github.com/orrzohar/FOMO"
     myproject: "/projects/fomo/"
     image: "/assets/publications/icons/fomo.jpg"
-    selected: y
+    selected: n
     ai: y
 
 
