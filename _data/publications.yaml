@@ -20,11 +20,12 @@ papers:
     venue: "arXiv preprint (2024)"
     arxiv: "https://arxiv.org/abs/2407.06189"
     bibtex: |
-      @article{zohar2024videostar,
+      @inproceedings{zohar2025videostar,
         title={Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision},
         author={Zohar, Orr and Wang, Xiaohan and Bitton, Yonatan and Szpektor, Idan and Yeung-Levy, Serena},
-        journal={arXiv preprint arXiv:2407.06189},
-        year={2024}
+        booktitle={The Thirteenth International Conference on Learning Representations},
+        year={2025},
+        url={https://openreview.net/forum?id=JYV2hrtFSv}
       }
     code: "https://github.com/orrzohar/Video-STaR"
     myproject: "/projects/video-star/"
@@ -38,7 +39,7 @@ papers:
     arxiv: "https://arxiv.org/abs/2403.10517"
     paper_pdf: "https://arxiv.org/pdf/2403.10517.pdf"
     bibtex: |
-      @article{VideoAgent,
+      @article{wang2024videoagent,
         title={VideoAgent: Long-form Video Understanding with Large Language Model as Agent},
         author={Wang, Xiaohan and Zhang, Yuhui and Zohar, Orr and Yeung-Levy, Serena},
         journal={European Conference on Computer Vision (ECCV)},
