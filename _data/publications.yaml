@@ -17,7 +17,7 @@ papers:
 
   - title: "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision"
     authors: "<b>Orr Zohar</b>, Xiaohan Wang, Yonatan Bitton, Idan Szpektor, Serena Yeung-Levy"
-    venue: "arXiv preprint (2024)"
+    venue: "ICLR 2025"
     arxiv: "https://arxiv.org/abs/2407.06189"
     bibtex: |
       @inproceedings{zohar2025videostar,
