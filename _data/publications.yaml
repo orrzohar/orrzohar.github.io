@@ -142,7 +142,7 @@ papers:
     code: "https://github.com/orrzohar/PROB"
     myproject: "/projects/prob/"
     image: "/assets/publications/icons/prob.png"
-    selected: y
+    selected: n
     ai: y
 
   - title: "Analyzing surgical technique in diverse open surgical videos with multitask machine learning"
