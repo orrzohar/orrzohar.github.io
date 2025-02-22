@@ -14,7 +14,25 @@ papers:
     image: "/assets/publications/icons/apollo.png"
     selected: y
     ai: y
-
+    
+  - title: "SmolVLM2: Bringing Video Understanding to Every Device"
+    authors: "<b>Orr Zohar</b>, Miquel Farré, Andres Marafioti, Merve Noyan, Pedro Cuenca, Cyril Zakka, and Joshua Lochner"
+    venue: "huggingface blog post(2025)"
+    bibtex: |
+      @online{zohar2025smolvlm2,
+        author = {Zohar, Orr and Farré, Miquel and Marafioti, Andres and Noyan, Merve and Cuenca, Pedro and Zakka, Cyril and Lochner, Joshua},
+        title  = {SmolVLM2: Bringing Video Understanding to Every Device},
+        year   = {2025},
+        month  = {feb},
+        day    = {20},
+        url    = {https://huggingface.co/blog/smolvlm2},
+        note   = {Accessed: 2025-02-22}
+      }
+    myproject: "https://huggingface.co/blog/smolvlm2"
+    image: "/assets/publications/icons/smolvlm2.png"
+    selected: y
+    ai: y
+    
   - title: "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision"
     authors: "<b>Orr Zohar</b>, Xiaohan Wang, Yonatan Bitton, Idan Szpektor, Serena Yeung-Levy"
     venue: "ICLR (2025)"
