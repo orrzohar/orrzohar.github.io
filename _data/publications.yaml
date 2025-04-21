@@ -1,7 +1,7 @@
 papers:
   - title: "Apollo: An Exploration of Video Understanding in Large Multimodal Models"
     authors: "<b>Orr Zohar</b>, Xiaohan Wang, Yann Dubois, Nikhil Mehta, Tong Xiao, Philippe Hansen-Estruch, Licheng Yu, Xiaofang Wang, Felix Juefei-Xu, Ning Zhang, Serena Yeung-Levy, and Xide Xia"
-    venue: "arXiv preprint (2024)"
+    venue: "CVPR 2025"
     arxiv: "https://arxiv.org/abs/2412.10360"
     bibtex: |
       @article{zohar2024apollo,
@@ -15,18 +15,16 @@ papers:
     selected: y
     ai: y
     
-  - title: "SmolVLM2: Bringing Video Understanding to Every Device"
-    authors: "<b>Orr Zohar</b>, Miquel Farré, Andres Marafioti, Merve Noyan, Pedro Cuenca, Cyril Zakka, and Joshua Lochner"
-    venue: "huggingface blog post(2025)"
+  - title: "SmolVLM: Redefining small and efficient multimodal models"
+    authors: "Andres Marafioti*, <b>Orr Zohar*</b>, Miquel Farré*, Merve Noyan, Pedro Cuenca, Cyril Zakka, Loubna Ben Allal, Anton Lozhkov, Nouamane Tazi, Vaibhav Srivastav, Joshua Lochner, Hugo Larcher, Mathieu Morlon, Lewis Tunstall, Leandro von Werra, Thomas Wolf"
+    venue: "arXiv (2025)"
+    arxiv: "https://arxiv.org/abs/2504.05299v1"
     bibtex: |
-      @online{zohar2025smolvlm2,
-        author = {Zohar, Orr and Farré, Miquel and Marafioti, Andres and Noyan, Merve and Cuenca, Pedro and Zakka, Cyril and Lochner, Joshua},
-        title  = {SmolVLM2: Bringing Video Understanding to Every Device},
-        year   = {2025},
-        month  = {feb},
-        day    = {20},
-        url    = {https://huggingface.co/blog/smolvlm2},
-        note   = {Accessed: 2025-02-22}
+      @article{marafioti2025smolvlm,
+        title={SmolVLM: Redefining small and efficient multimodal models},
+        author={Marafioti, Andr{\'e}s and Zohar, Orr and Farr{\'e}, Miquel and Noyan, Merve and Bakouch, Elie and Cuenca, Pedro and Zakka, Cyril and Allal, Loubna Ben and Lozhkov, Anton and Tazi, Nouamane and others},
+        journal={arXiv preprint arXiv:2504.05299},
+        year={2025}
       }
     myproject: "https://huggingface.co/blog/smolvlm2"
     image: "/assets/publications/icons/smolvlm2.png"
