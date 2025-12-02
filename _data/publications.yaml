@@ -11,7 +11,8 @@ papers:
         year={2025}
       }
     myproject: "https://huggingface.co/blog/smolvlm2"
-    image: "/assets/publications/icons/smolvlm2.png"
+    code: "https://github.com/huggingface/smollm"
+    image: "/assets/publications/icons/smolvlm.png"
     selected: y
     ai: y
 
@@ -26,6 +27,8 @@ papers:
         journal={arXiv preprint arXiv:2510.17269},
         year={2025}
       }
+    project: "https://huggingface.co/spaces/HuggingFaceM4/FineVision"
+    data: "https://huggingface.co/datasets/HuggingFaceM4/FineVision"
     image: "/assets/publications/icons/finevision.png"
     selected: y
     ai: y
@@ -57,6 +60,9 @@ papers:
         journal={arXiv preprint arXiv:2501.13919},
         year={2025}
       }
+    project: "https://ruili33.github.io/tpo_website/"
+    code: "https://github.com/ruili33/TPO"
+    data: "https://huggingface.co/datasets/ruili0/LongVA-TPO-10k"
     image: "/assets/publications/icons/tpo.png"
     selected: y
     ai: y
@@ -74,6 +80,7 @@ papers:
         url={https://openreview.net/forum?id=JYV2hrtFSv}
       }
     code: "https://github.com/orrzohar/Video-STaR"
+    data: "https://huggingface.co/datasets/orrzohar/Video-STaR"
     myproject: "/projects/video-star/"
     image: "/assets/publications/icons/videostar.png"
     selected: y
