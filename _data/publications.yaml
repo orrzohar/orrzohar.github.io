@@ -1,4 +1,35 @@
 papers:
+  - title: "SmolVLM: Redefining small and efficient multimodal models"
+    authors: "Andres Marafioti*, <b>Orr Zohar*</b>, Miquel Farré*, Merve Noyan, Pedro Cuenca, Cyril Zakka, Loubna Ben Allal, Anton Lozhkov, Nouamane Tazi, Vaibhav Srivastav, Joshua Lochner, Hugo Larcher, Mathieu Morlon, Lewis Tunstall, Leandro von Werra, Thomas Wolf"
+    venue: "COLM (2025)"
+    arxiv: "https://arxiv.org/abs/2504.05299"
+    bibtex: |
+      @inproceedings{marafioti2025smolvlm,
+        title={SmolVLM: Redefining small and efficient multimodal models},
+        author={Marafioti, Andr{\'e}s and Zohar, Orr and Farr{\'e}, Miquel and Noyan, Merve and Bakouch, Elie and Cuenca, Pedro and Zakka, Cyril and Allal, Loubna Ben and Lozhkov, Anton and Tazi, Nouamane and others},
+        booktitle={Conference on Language Modeling (COLM)},
+        year={2025}
+      }
+    myproject: "https://huggingface.co/blog/smolvlm2"
+    image: "/assets/publications/icons/smolvlm2.png"
+    selected: y
+    ai: y
+
+  - title: "FineVision: Open Data Is All You Need"
+    authors: "Luis Wiedmann*, <b>Orr Zohar*</b>, Amir Mahla, Xiaohan Wang, Rui Li, Thibaud Frere, Leandro von Werra, Aritra Roy Gosthipaty, Andrés Marafioti"
+    venue: "arXiv (2025)"
+    arxiv: "https://arxiv.org/abs/2510.17269"
+    bibtex: |
+      @article{wiedmann2025finevision,
+        title={FineVision: Open Data Is All You Need},
+        author={Wiedmann, Luis and Zohar, Orr and Mahla, Amir and Wang, Xiaohan and Li, Rui and Frere, Thibaud and von Werra, Leandro and Gosthipaty, Aritra Roy and Marafioti, Andr{\'e}s},
+        journal={arXiv preprint arXiv:2510.17269},
+        year={2025}
+      }
+    image: "/assets/publications/icons/finevision.png"
+    selected: y
+    ai: y
+
   - title: "Apollo: An Exploration of Video Understanding in Large Multimodal Models"
     authors: "<b>Orr Zohar</b>, Xiaohan Wang, Yann Dubois, Nikhil Mehta, Tong Xiao, Philippe Hansen-Estruch, Licheng Yu, Xiaofang Wang, Felix Juefei-Xu, Ning Zhang, Serena Yeung-Levy, and Xide Xia"
     venue: "CVPR 2025"
@@ -14,20 +45,19 @@ papers:
     image: "/assets/publications/icons/apollo.png"
     selected: y
     ai: y
-    
-  - title: "SmolVLM: Redefining small and efficient multimodal models"
-    authors: "Andres Marafioti*, <b>Orr Zohar*</b>, Miquel Farré*, Merve Noyan, Pedro Cuenca, Cyril Zakka, Loubna Ben Allal, Anton Lozhkov, Nouamane Tazi, Vaibhav Srivastav, Joshua Lochner, Hugo Larcher, Mathieu Morlon, Lewis Tunstall, Leandro von Werra, Thomas Wolf"
+
+  - title: "Temporal Preference Optimization for Long-Form Video Understanding"
+    authors: "Rui Li*, Xiaohan Wang*, Yuhui Zhang, <b>Orr Zohar</b>, Zeyu Wang, Serena Yeung-Levy"
     venue: "arXiv (2025)"
-    arxiv: "https://arxiv.org/abs/2504.05299v1"
+    arxiv: "https://arxiv.org/abs/2501.13919"
     bibtex: |
-      @article{marafioti2025smolvlm,
-        title={SmolVLM: Redefining small and efficient multimodal models},
-        author={Marafioti, Andr{\'e}s and Zohar, Orr and Farr{\'e}, Miquel and Noyan, Merve and Bakouch, Elie and Cuenca, Pedro and Zakka, Cyril and Allal, Loubna Ben and Lozhkov, Anton and Tazi, Nouamane and others},
-        journal={arXiv preprint arXiv:2504.05299},
+      @article{li2025tpo,
+        title={Temporal Preference Optimization for Long-Form Video Understanding},
+        author={Li, Rui and Wang, Xiaohan and Zhang, Yuhui and Zohar, Orr and Wang, Zeyu and Yeung-Levy, Serena},
+        journal={arXiv preprint arXiv:2501.13919},
         year={2025}
       }
-    myproject: "https://huggingface.co/blog/smolvlm2"
-    image: "/assets/publications/icons/smolvlm2.png"
+    image: "/assets/publications/icons/tpo.png"
     selected: y
     ai: y
     
@@ -80,7 +110,7 @@ papers:
       }
     myproject: "https://philippe-eecs.github.io/vitok/"
     image: "/assets/publications/icons/vitok.png"
-    selected: y
+    selected: n
     ai: y
 
   - title: "Open World Object Detection in the Era of Foundation Models"
@@ -119,7 +149,7 @@ papers:
     code: "https://github.com/orrzohar/LOVM"
     myproject: "/projects/lovm/"
     image: "/assets/publications/icons/lovm.png"
-    selected: y
+    selected: n
     ai: y
 
   - title: "PROB: Probabilistic Objectness for Open World Object Detection"

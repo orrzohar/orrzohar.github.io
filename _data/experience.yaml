@@ -1,15 +1,15 @@
 experiences:
 
+- place: "NVIDIA"
+  time: "2025 - Now"
+  title: "Research Scientist, Intern"
+  subtitle: "LLM Discrete Diffusion & Multimodal Pre-training"
+  category: "work"
+
 - place: "Meta"
   time: "2024 - 2025"
   title: "Research Scientist, Intern"
   subtitle: "GenAI"
-  category: "work"
-
-- place: "Zohar Consulting Services"
-  time: "2023 - Now"
-  title: "President"
-  subtitle: "AI Consulting"
   category: "work"
 
 - place: "Stanford University"
@@ -17,6 +17,12 @@ experiences:
   title: "Ph.D. Student & Knight-Hennessy Scholar"
   subtitle: "MARVL - Medical AI and Computer Vision Lab"
   category: "school"
+
+- place: "Zohar Consulting Services"
+  time: "2023 - 2024"
+  title: "President"
+  subtitle: "AI Consulting"
+  category: "work"
 
 
 - place: "Stanford University"
