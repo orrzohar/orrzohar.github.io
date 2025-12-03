@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Video-STaR">
+  <meta name="keywords" content="Video Instruction Tuning, Visual Instruction Tuning, Self-Training, Self-Improvment, Data Generation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Video-STaR</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="../../libs/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="../../libs/icon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+<style>
+  .gradient-background {
+    /* Set the background to a linear gradient: */
+    background: linear-gradient(to bottom, lightblue 50%, white 50%);
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="../../">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">More Research</a>
+        <div class="navbar-dropdown">
+          
+            <a class="navbar-item" href="../../projects/video-star">
+              Video-STaR
+            </a>
+          
+            <a class="navbar-item" href="../../projects/fomo">
+              FOMO
+            </a>
+          
+            <a class="navbar-item" href="../../projects/lovm">
+              LOVM
+            </a>
+          
+            <a class="navbar-item" href="../../projects/prob">
+              PROB
+            </a>
+          
+            <a class="navbar-item" href="../../projects/ai_surgery">
+              AI-Surgery
+            </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://orrzohar.github.io">Orr Zohar</a><sup></sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://wxh1996.github.io">Xiaohan Wang</a><sup></sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://yonatanbitton.github.io">Yonatan Bitton</a><sup></sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://research.google/people/idan-szpektor/">Idan Szpektor</a><sup></sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://marvl.stanford.edu/people.html">Serena Yeung-Levy</a><sup></sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup></sup>Stanford University,</span>
+            <span class="author-block"><sup></sup>Google Research</span>
+          </div>
+          
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <div class="is-size-5 publication-venue">
+              <span class="publication-venue">ICLR 2025</span>
+            </div>
+          </div>
+          
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2407.06189"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <!--<span>arXiv</span>-->
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2407.06189"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <img src="./static/images/pdf_icon.png" alt="PDF Icon" style="height: 1em; width: 1em;">
+                  </span>
+                  <span>PDF</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/orrzohar/Video-STaR"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/datasets/orrzohar/Video-STaR"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <p style="font-size:20px">🤗</p>
+                  </span>
+                  <span>Dataset</span>
+                  </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/spaces/orrzohar/Video-STaR"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <p style="font-size:20px">🤗</p>
+                  </span>
+                  <span>Demo</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Video-STaR introduces a novel self-training approach for video instruction tuning, leveraging labeled
+            video datasets to enhance Large Vision Language Models (LVLMs). By iteratively generating and filtering
+            answers containing the correct video labels, Video-STaR improves general video understanding and adapts
+            LVLMs to new tasks. Our results show significant performance gains in video QA and downstream tasks,
+            demonstrating the effectiveness of Video-STaR in utilizing existing video labels as weak supervision.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-justified">
+        <h2 class="title is-3">💡 Introduction</h2>
+          Video-STaR is a self-training for video language models, allowing the use of <b>any</b> labeled video
+          dataset for video instruction tuning. It cycles between generating and filtering answers to ensure only
+          those containing the correct video labels are used for training, effectively leveraging existing video
+          labels as weak supervision. This iterative process enhances both general video understanding and the
+          adaptability of LVLMs to novel tasks, resulting in significant performance improvements in video
+          question-answering and various downstream applications.
+          <img src="./static/images/Method.png" class="image" width="100%" style="margin-bottom: 20px; margin-top: 20px;" />
+          <p>
+          (3.1) We initialize by prompting a large vision-language model to generate an answer for a particular video.
+            (3.3) We then filter the generated answers to those only containing the original video labels. video. We then filter the data utilizing the corresponding video label.
+            </p>
+          <p>
+            (3.2) The videos whose generated answer did not contain the ground-truth labels are then sent to label rationalization, where given the video, question, and label - the model is expected to rationalize the label.
+            (3.3) The generated answers are filtered again to those only containing the ground-truth labels, and
+            </p>
+          <p>
+            (3) the large vision language is instruction-tuned from the pre-trained checkpoint on the resulting dataset. The cycle is then repeated.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-justified">
+        <h2 class="title is-3">🚀 Adapting to New Datasets</h2>
+          LVLMs often struggle with complex and diverse video tasks, and collecting data to adapt these models is
+          resource-intensive. Video-STaR addresses this by leveraging auxiliary labels from existing datasets for
+          model adaptation. We found that Video-STaR efficiently adapted LVLMs to new tasks, with a 20% accuracy
+          increase on Kinetics700 and an improvement from 17.6 to 20.2 in FineDiving score prediction accuracy.
+          These results demonstrate Video-STaR's ability to enhance LVLM performance using auxiliary labels,
+          making it a versatile tool for various video understanding applications.
+
+          <img src="./static/images/adapted.png" class="image" width="100%" style="margin-bottom: 20px; margin-top: 20px;" />
+
+        <h2 class="title is-3">📊 General VQA Performance </h2>
+          Collecting high-quality and diverse data is challenging, and scaling it is even harder. Video-STaR
+          facilitates the collection of diverse, high-quality data, enabling improvements in frontier models
+          like Gemini and ChatGPT. In the TempCompass evaluation, Video-STaR consistently outperformed Video-LLaVA
+          with a 10% performance boost. The fine-grained nature of TempCompass underscores Video-STaR ability to
+          maintain high accuracy without increasing hallucinations.
+
+          <img src="./static/images/tempcompass.png" class="image" width="100%" style="margin-bottom: 20px; margin-top: 20px;" />
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{zohar2024videostar,
+    title = {Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision},
+    author = {Zohar, Orr and Wang, Xiaohan and Bitton, Yonatan and Szpektor, Idan and Yeung-Levy, Serena},
+    year = {2024},
+    booktitle = {arXiv preprint arXiv:2407.06189},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>. The website template is from the <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

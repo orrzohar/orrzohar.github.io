@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="LOVM">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LOVM</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="../../libs/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="../../libs/icon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="../../">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">More Research</a>
+        <div class="navbar-dropdown">
+          
+            <a class="navbar-item" href="../../projects/video-star">
+              Video-STaR
+            </a>
+          
+            <a class="navbar-item" href="../../projects/fomo">
+              FOMO
+            </a>
+          
+            <a class="navbar-item" href="../../projects/lovm">
+              LOVM
+            </a>
+          
+            <a class="navbar-item" href="../../projects/prob">
+              PROB
+            </a>
+          
+            <a class="navbar-item" href="../../projects/ai_surgery">
+              AI-Surgery
+            </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">LOVM: Language-Only Vision Model Selection</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://orrzohar.github.io">Orr Zohar</a><sup></sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://marshuang80.github.io">Mars Huang</a><sup></sup>,</span>
+            <span class="author-block">
+              <a href="https://wangkua1.github.io">Jackson Wang</a><sup></sup>,</span>
+            <span class="author-block">
+              <a href="https://marvl.stanford.edu/people.html">Serena Yeung</a><sup></sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Stanford University</span>
+          </div>
+
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <div class="is-size-5 publication-venue">
+              <span class="publication-venue">NeurIPS 2023</span>
+            </div>
+          </div> <!-- Closing tag for the centering div -->
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://nips.cc/virtual/2023/poster/73618"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2306.08893"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/orrzohar/LOVM"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Pre-trained multi-modal vision-language models (VLMs) are becoming increasingly popular due to their
+            exceptional performance on downstream vision applications, particularly in the few- and zero-shot
+            settings. However, selecting the best-performing VLM for some downstream applications is non-trivial, as
+            it is dataset and task-dependent. Meanwhile, the exhaustive evaluation of all available VLMs on a novel
+            application is not only time and computationally demanding but also necessitates the collection of a
+            labeled dataset for evaluation. As the number of open-source VLM variants increases, there is a need
+            for an efficient model selection strategy that does not require access to a curated evaluation dataset.
+            This paper proposes a novel task and benchmark for efficiently evaluating VLMs’ zero-shot performance
+            on downstream applications without access to the downstream task dataset.
+          </p>
+          <p>
+            Specifically, we introduce a new
+            task LOVM: Language-Only Vision Model Selection, where methods are expected to perform both model selection
+            and performance prediction based solely on a text description of the desired downstream application. We
+            then introduced an extensive LOVM benchmark consisting of ground-truth evaluations of 35 pre-trained VLMs
+            and 23 datasets, where methods are expected to rank the pre-trained VLMs and predict their zero-shot
+            performance.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <img src="./static/images/poll.png"
+           class="image"
+           width="95%"/>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <!-- Method. -->
+      <div class="column is-full-width">
+        <h2 class="title is-3">Task</h2>
+        <div class="content has-text-justified">
+        <p>
+          The Language-Only Vision-Language Model (LOVM) selection task represents a novel approach to model selection
+          in the field of pre-trained vision-language models (VLMs). It aims to efficiently select the most suitable
+          VLM and predict its performance based solely on a text description of a downstream vision task, eliminating
+          the need for access to the downstream task dataset. This is particularly useful for users who lack the
+          resources or technical proficiency to collect and label an evaluation dataset and subsequently evaluate
+          all available VLMs. LOVM methods leverage the phenomenon of cross-modality transferability, using text as a
+          proxy for corresponding images. The ultimate goal of LOVM is to simplify and democratize the model selection
+          process, allowing users with minimal technical expertise to deploy effective AI solutions for their specific
+          vision tasks.
+        </p>
+        </div>
+                 <div class="column is-full-width">
+           <div class="columns is-centered">
+             <img src="./static/images/Task.png"
+                  class="image"
+                  width="100%"
+                  style="margin-bottom: 20px;"/>
+           </div>
+         </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <!-- Method. -->
+      <div class="column is-full-width">
+        <h2 class="title is-3">Baselines</h2>
+         <div class="column is-full-width">
+           <div class="columns is-centered">
+             <img src="./static/images/Method.png"
+                  class="image"
+                  width="100%"
+                  style="margin-bottom: 20px;"/>
+           </div>
+         </div>
+        <div class="content has-text-justified">
+        <p>
+          Our baselines (which we call modelGPT) uses a text description of a novel task and prompts a Large Language
+          Model (LLM) - GPT3.5 to generate the Captions and Synonym Datasets. We then use every VLM’s text encoder to
+          produce both the class weights (top) and the different text-based scores (left). On the bottom, you can see
+          a graphical interpretation of each score. We then fit linear regression models on these scores to produce
+          our baselines.
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <!-- Method. -->
+      <div class="column is-full-width">
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            We evaluate our baselines’s performance over 23 datasets and 35 pre-trained models, and when predicting
+            the top-1 accuracy and mean per-class recall (averaged over all datasets).
+            INB - ImageNet Baseline, C - Text Classification scores, G - Granularity scores. As can be seen, mixed
+            approaches achieve the best VLM ranking and performance prediction.
+          </p>
+        </div>
+        <div class="column is-full-width">
+          <div class="columns is-centered">
+            <img src="./static/images/Table.png"
+                 class="image"
+                 width="80%"
+                 style="margin-bottom: 20px;"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{zohar2023lovm,
+    title = {LOVM: Language-Only Vision Model Selection},
+    author = {Zohar, Orr and Huang, Shih-Cheng and Wang, Kuan-Chieh and Yeung, Serena},
+    year = {2023},
+    booktitle = {Thirty-seventh Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>. The website template is from the <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

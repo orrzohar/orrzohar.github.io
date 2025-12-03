@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="FOMO">
+  <meta name="keywords" content="FOMO, OWOD, OWD">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FOMO</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="../../libs/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="../../libs/icon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+<style>
+  .gradient-background {
+    /* Set the background to a linear gradient: */
+    background: linear-gradient(to bottom, lightblue 50%, white 50%);
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="../../">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">More Research</a>
+        <div class="navbar-dropdown">
+          
+            <a class="navbar-item" href="../../projects/video-star">
+              Video-STaR
+            </a>
+          
+            <a class="navbar-item" href="../../projects/fomo">
+              FOMO
+            </a>
+          
+            <a class="navbar-item" href="../../projects/lovm">
+              LOVM
+            </a>
+          
+            <a class="navbar-item" href="../../projects/prob">
+              PROB
+            </a>
+          
+            <a class="navbar-item" href="../../projects/ai_surgery">
+              AI-Surgery
+            </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Open World Object Detection in the Era of Foundation Models</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://orrzohar.github.io">Orr Zohar</a><sup></sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/ale9806/">Alejandro Lozano</a><sup></sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/shelly-goel-2023/">Shelly Goel</a><sup></sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://marvl.stanford.edu/people.html">Serena Yeung</a><sup></sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://wangkua1.github.io">Jackson Wang</a><sup></sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup></sup>Stanford University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2312.05745"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/orrzohar/FOMO"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Object detection is integral to a bevy of real-world applications, from robotics to medical image
+            analysis. To be used reliably in such applications, models must be capable of handling unexpected -
+            or novel - objects. The open world object detection (OWD) paradigm addresses this challenge by enabling
+            models to detect unknown objects and learn discovered ones incrementally. However, OWD method development
+            is hindered due to the stringent benchmark and task definitions. These definitions effectively prohibit
+            foundation models. Here, we aim to relax these definitions and investigate the utilization of
+            pre-trained foundation models in OWD.
+          </p>
+          <p>
+            First, we show that existing benchmarks are insufficient in
+            evaluating methods that utilize foundation models, as even naive integration methods nearly saturate
+            these benchmarks. This result motivated us to curate a new and challenging benchmark for these models.
+            Therefore, we introduce a new benchmark that includes five real-world application-driven datasets,
+            including challenging domains such as aerial and surgical images, and establish baselines. We exploit the
+            inherent connection between classes in application-driven datasets and introduce a novel method,
+            Foundation Object detection Model for the Open world, or FOMO, which identifies unknown objects based
+            on their shared attributes with the base known objects.
+          </p>
+          <p>
+            FOMO has ~3x unknown object mAP compared to
+            baselines on our benchmark. However, our results indicate a significant place for improvement -
+            suggesting a great research opportunity in further scaling object detection methods to real-world
+            domains. Our code and benchmark are available in the supplementary and will be made available upon
+            publication.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <!-- Method. -->
+      <div class="column is-full-width">
+         <div class="column is-full-width">
+           <div class="columns is-centered">
+             <img src="./static/images/Method.png"
+                  class="image"
+                  width="100%"
+                  style="margin-bottom: 20px;"/>
+           </div>
+         </div>
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+        <p>
+          (i) Attributes are generated using an LLM, which is then encoded using FOMO’s Text Transformer Encoder into
+          the Attribute Embedding (E_att). Meanwhile, vision-based object embeddings are derived from (image-based)
+          object exemplars from the models’ Vision Encoder (e^v). (ii) For attribute selection, we update W while
+          freezing E_att using the BCE classification loss, followed by a threshold. (iii) to refine the attributes,
+          we update E_att while freezing W. (iv) An image is fed into the vision encoder during inference, followed
+          by the bounding box and classification heads. The classification head utilizes the pre-computed attribute
+          embeddings to produce the attribute logits. To identify unknown objects, we look for object proposals that
+          are in-distribution (ID) to the attributes but out-of-distribution (OOD) to the known classes. s_A attribute
+          scores between an image and attribute embedding.
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <!-- Method. -->
+      <div class="column is-full-width">
+        <h2 class="title is-3">Results</h2>
+        <div class="column is-full-width">
+          <div class="columns is-centered">
+            <img src="./static/images/qual_examples_2.png"
+                 class="image"
+                 width="100%"
+                 style="margin-bottom: 20px;"/>
+          </div>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            (top) BASE-FS (bottom) FOMO on RWD. blue - unknown, green - known. FOMO shows superior performance on RWD,
+            appearing to have less known-class confusion and better unknown object detection capability. For example,
+            in Aquatic, BASE-FS seems to confuse unknown objects (stingrays) as known objects (sharks), but FOMO
+            appears more robust.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="column is-full-width">
+      <div class="columns is-centered">
+        <img src="./static/images/quant_results.png"
+             class="image"
+             width="100%"
+             style="margin-bottom: 20px;"/>
+      </div>
+    </div>
+    <div class="content has-text-justified">
+      <p>
+        Each domain is broken up into two tasks, where in task 1, you are given some classes, and then known and
+        unknown mAP are evaluated. In Task 2, the rest of the classes are revealed, and we evaluate Previously and
+        Currently known mAP. FOMO and BASE-FS are evaluated in 100-shot regime. To see the effect of the number of
+        shots on performance. GT baselines use the ground-truth class names to identify unknown objects, effectively
+        operating in the open-vocabulary paradigm, and serve as an upper bound to the text-conditioned (zero-shot)
+        baselines.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{zohar2023fomo,
+    title = {Open World Object Detection in the Era of Foundation Models},
+    author = {Zohar, Orr and Lozano, Alejandro and Goel, Shelly and Yeung, Serena and Wang, Kuan-Chieh},
+    year = {2023},
+    booktitle = {arXiv preprint arXiv:2312.05745},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>. The website template is from the <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

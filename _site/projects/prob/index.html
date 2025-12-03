@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="PROB">
+  <meta name="keywords" content="PROB, OWOD">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PROB</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="../../libs/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="../../libs/icon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+<style>
+  .gradient-background {
+    /* Set the background to a linear gradient: */
+    background: linear-gradient(to bottom, lightblue 50%, white 50%);
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="../../">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">More Research</a>
+        <div class="navbar-dropdown">
+          
+            <a class="navbar-item" href="../../projects/video-star">
+              Video-STaR
+            </a>
+          
+            <a class="navbar-item" href="../../projects/fomo">
+              FOMO
+            </a>
+          
+            <a class="navbar-item" href="../../projects/lovm">
+              LOVM
+            </a>
+          
+            <a class="navbar-item" href="../../projects/prob">
+              PROB
+            </a>
+          
+            <a class="navbar-item" href="../../projects/ai_surgery">
+              AI-Surgery
+            </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">PROB: Probabilistic Objectness for Open World Object Detection</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://orrzohar.github.io">Orr Zohar</a><sup></sup>,</span>
+            <span class="author-block">
+              <a href="https://wangkua1.github.io">Jackson Wang</a><sup></sup>,</span>
+            <span class="author-block">
+              <a href="https://marvl.stanford.edu/people.html">Serena Yeung</a><sup></sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup></sup>Stanford University</span>
+          </div>
+
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <div class="is-size-5 publication-venue">
+              <span class="publication-venue">CVPR 2023</span>
+            </div>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Zohar_PROB_Probabilistic_Objectness_for_Open_World_Object_Detection_CVPR_2023_paper.html"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2212.01424"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=prSeAoO82M4"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/orrzohar/PROB"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Open World Object Detection (OWOD) is a new and challenging computer vision task that bridges
+            the gap between classic object detection (OD) benchmarks and object detection in the real world.
+            In addition to detecting and classifying seen/labeled objects, OWOD algorithms are expected to detect
+            novel/unknown objects - which can be classified and incrementally learned.
+          </p>
+          <p>
+            In standard OD, object proposals
+            not overlapping with a labeled object are automatically classified as background. Therefore, simply
+            applying OD methods to OWOD fails as unknown objects would be predicted as background. The challenge of
+            detecting unknown objects stems from the lack of supervision in distinguishing unknown objects and
+            background object proposals. Previous OWOD methods have attempted to overcome this issue by
+            generating supervision using pseudo-labeling - however, unknown object detection has remained low.
+            Probabilistic/generative models may provide a solution for this challenge.
+          </p>
+          <p>
+            Herein, we introduce a novel
+            probabilistic framework for objectness estimation, where we alternate between probability distribution
+            estimation and objectness likelihood maximization of known objects in the embedded feature space -
+            ultimately allowing us to estimate the objectness probability of different proposals. The resulting
+            Probabilistic Objectness transformer-based open-world detector, PROB, integrates our framework into
+            traditional object detection models, adapting them for the open-world setting. Comprehensive experiments on
+            OWOD benchmarks show that PROB outperforms all existing OWOD methods in both unknown object detection
+            (~2x unknown recall) and known object detection (~10% mAP).
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <!-- Method. -->
+      <div class="column is-full-width">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+        <p>PROB adapts the Deformable DETR model by adding the proposed ‘probabilistic objectness’ head.
+          In training, we alternate between distribution estimation (top right) and objectness
+          likelihood maximization of matched ground-truth objects (top left). For inference, the objectness
+          probability multiplies the classification probabilities. For more, see the manuscript.
+        </p>
+        </div>
+        <div class="column is-full-width">
+        <div class="columns is-centered">
+        <img src="./static/images/method.png"
+        class="image"
+        width="85%"
+        style="margin-bottom: 20px;"/>
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <!-- Method. -->
+      <div class="column is-full-width">
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <p>Qualitative results on example images from MS-COCO test set. Detections of PROB (top row) and OW-DETR
+          (bottom row) are displayed, with green - known and blue - unknown object detections. Across all examples,
+          PROB detected more unknown objects than OW-DETR, for example, tennis racket in the right column and zebras
+          in the left column. Interestingly, when OW-DETR does detect unknown objects, the predictions have very low
+          confidence, e.g., the surfing board in the center-left column.
+          </p>
+        </div>
+        <div class="column is-full-width">
+          <div class="columns is-centered">
+            <img src="./static/images/qual_examples_2.png"
+                 class="image"
+                 width="85%"
+                 style="margin-bottom: 20px;"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content has-text-justified">
+      <p>
+        State-of-the-art comparison for Open World Object Detection on M-OWODB (top) and S-OWODB (bottom). The
+      comparison is shown in terms of unknown class recall (U-Recall) and known class mAP@0.5 (for previously,
+      currently, and all known objects). PROB outperforms all existing OWOD models across all tasks both in terms
+      of U-Recall and known mAP, indicating our models improved unknown and known detection capabilities. The smaller
+      drops in mAP between ‘Previously known’ and ‘Current known’ from the previous task exemplify that the
+      exemplar selection improved our models’ incremental learning performance. Note that since all 80 classes are
+      known in Task 4, U-Recall is not computed. Only ORE and OW-DETR are compared in S-OWODB, as other methods have
+      not reported results on this benchmark. See our paper for more details.
+      </p>
+    </div>
+    <div class="column is-full-width">
+      <div class="columns is-centered">
+        <img src="./static/images/quant_results.png"
+             class="image"
+             width="85%"
+             style="margin-bottom: 20px;"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{Zohar_2023_CVPR,
+    title = {PROB: Probabilistic Objectness for Open World Object Detection},
+    author = {Zohar, Orr and Wang, Kuan-Chieh and Yeung, Serena},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month = jun,
+    year = {2023},
+    pages = {11444-11453}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>. The website template is from the <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

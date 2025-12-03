@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Analyzing Surgical Technique in Diverse Open-Surgical Videos with Multi-Task Machine Learning">
+  <meta name="keywords" content="AI-Surgery, Open Surgery, AI">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI-Surgery: Analyzing Surgical Technique in Diverse Open-Surgical Videos with Multi-Task Machine Learning</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="../../libs/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="../../libs/icon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+<style>
+  .gradient-background {
+    /* Set the background to a linear gradient: */
+    background: linear-gradient(to bottom, lightblue 50%, white 50%);
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="../../">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">More Research</a>
+        <div class="navbar-dropdown">
+          
+            <a class="navbar-item" href="../../projects/video-star">
+              Video-STaR
+            </a>
+          
+            <a class="navbar-item" href="../../projects/fomo">
+              FOMO
+            </a>
+          
+            <a class="navbar-item" href="../../projects/lovm">
+              LOVM
+            </a>
+          
+            <a class="navbar-item" href="../../projects/prob">
+              PROB
+            </a>
+          
+            <a class="navbar-item" href="../../projects/ai_surgery">
+              AI-Surgery
+            </a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Analyzing Surgical Technique in Diverse Open-Surgical Videos with Multi-Task Machine Learning</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://egoodman92.github.io/">Emmett Goodman</a><sup></sup>,</span>
+            <span class="author-block">
+              Krishna Patel<sup></sup>,</span>
+            <span class="author-block">
+              Yilun Zhang<sup></sup>,</span>
+            <span class="author-block">
+              Willian Locke<sup></sup>,</span>
+            <span class="author-block">
+              Chris Kennedy<sup></sup>,</span>
+            <span class="author-block">
+              Rohan Mehrota<sup></sup>,</span>
+              <span class="author-block">
+              <a href="https://orrzohar.github.io">Orr Zohar</a><sup></sup>,</span>
+            <span class="author-block">
+              Margaret Berrigan<sup></sup>,</span>
+            <span class="author-block">
+              Gabriel Brat<sup></sup>,</span>
+              <span class="author-block">
+              <a href="https://marvl.stanford.edu/people.html">Serena Yeung</a><sup></sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup></sup>Stanford University</span>
+          </div>
+
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <div class="is-size-5 publication-venue">
+              <span class="publication-venue">JAMA Surgery</span>
+            </div>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://jamanetwork.com/journals/jamasurgery/fullarticle/2812760"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Open procedures represent the dominant form of surgery worldwide. Artificial intelligence (AI)
+            has the potential to optimize surgical practice and improve patient outcomes, but efforts have
+            focused primarily on minimally invasive techniques. Our work overcomes existing data limitations
+            for training AI models by curating, from YouTube, the largest dataset of open surgical videos
+            to date: 1997 videos from 23 surgical procedures uploaded from 50 countries. Using this dataset,
+            we developed a multi-task AI model capable of real-time understanding of surgical behaviors,
+            hands, and tools - the building blocks of procedural flow and surgeon skill. We show that our
+            model generalizes across diverse surgery types and environments. Illustrating this generalizability,
+            we directly applied our YouTube-trained model to analyze open surgeries prospectively collected
+            at an academic medical center and identified kinematic descriptors of surgical skill related
+            to efficiency of hand motion. Our Annotated Videos of Open Surgery (AVOS) dataset and trained
+            model will be made available for further development of surgical AI.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <!-- Method. -->
+      <div class="column is-full-width">
+                <h2 class="title is-3">Method</h2>
+
+         <div class="column is-full-width">
+           <div class="columns is-centered">
+             <img src="./static/images/method.png"
+                  class="image"
+                  width="85%"
+                  style="margin-bottom: 20px;"/>
+           </div>
+         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <!-- Method. -->
+      <div class="column is-full-width">
+        <h2 class="title is-3">Results</h2>
+        <div class="column is-full-width">
+          <div class="columns is-centered">
+            <img src="./static/images/Results1.png"
+                 class="image"
+                 width="85%"
+                 style="margin-bottom: 20px;"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-full-width">
+      <div class="columns is-centered">
+        <img src="./static/images/Results2.png"
+             class="image"
+             width="85%"
+             style="margin-bottom: 20px;"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{goodman2022surgery,
+    title = {Analyzing Surgical Technique in Diverse Open-Surgical Videos with Multi-Task Machine Learning},
+    author = {Goodman, Emmett D. and Patel, Krishna K. and Zhang, Yilun and Locke, William and Kennedy, Chris J. and Mehrotra, Rohan and Ren, Stephen and Guan, Melody Y. and Zohar, Orr and Downing, Maren and Chen, Hao Wei and Clark, Jevin Z. and Brat, Gabriel A. and Yeung, Serena},
+    journal = {JAMA Surgery},
+    issn = {2168-6254},
+    month = dec,
+    year = {2023}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>. The website template is from the <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
