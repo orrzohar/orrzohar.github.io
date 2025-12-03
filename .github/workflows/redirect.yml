@@ -1,4 +1,4 @@
-name: Deploy Redirect to GitHub Pages
+name: Deploy Redirect
 
 on:
   push:
@@ -10,9 +10,13 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
