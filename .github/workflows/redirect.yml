@@ -29,8 +29,10 @@ jobs:
           <html lang="en">
           <head>
             <meta charset="UTF-8">
-            <meta http-equiv="refresh" content="0; url=https://ai.stanford.edu/~orrzohar/">
+            <meta name="robots" content="noindex,follow">
+            <meta name="googlebot" content="noindex,follow">
             <link rel="canonical" href="https://ai.stanford.edu/~orrzohar/">
+            <meta http-equiv="refresh" content="0; url=https://ai.stanford.edu/~orrzohar/">
             <title>Redirecting to ai.stanford.edu/~orrzohar</title>
           </head>
           <body>
@@ -45,4 +47,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
