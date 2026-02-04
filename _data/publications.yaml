@@ -2,7 +2,7 @@ papers:
   - title: "SmolVLM: Redefining small and efficient multimodal models"
     authors: "Andres Marafioti*, <b>Orr Zohar*</b>, Miquel Farré*, Merve Noyan, Pedro Cuenca, Cyril Zakka, Loubna Ben Allal, Anton Lozhkov, Nouamane Tazi, Vaibhav Srivastav, Joshua Lochner, Hugo Larcher, Mathieu Morlon, Lewis Tunstall, Leandro von Werra, Thomas Wolf"
     venue: "COLM (2025)"
-    insight: "One of the smallest LMMs for image + video—runs on web browsers and iPhones; powers HuggingSnap and SmolVLA for robot control"
+    insight: "The smallest LMMs for image + video—runs on web browsers and iPhones; powers HuggingSnap and SmolVLA for robot control"
     arxiv: "https://arxiv.org/abs/2504.05299"
     bibtex: |
       @inproceedings{marafioti2025smolvlm,
