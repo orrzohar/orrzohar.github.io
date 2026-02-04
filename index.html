@@ -4,8 +4,9 @@ title: Home
 ---
 <!-- ========== BIO ========== -->
 <div class="docs-section" id="bio">
-  <p style="font-size: 1.15em; font-style: italic; color: #555; margin-bottom: 25px; border-left: 3px solid #2196F3; padding-left: 15px;">
-    My mission is to teach machines to navigate and understand the physical world—and I’m building the foundations to get there.
+  <!-- Opening Statement -->
+  <p style="font-size: 1.15em; font-style: italic; color: #555; margin-bottom: 20px; border-left: 3px solid #2196F3; padding-left: 15px;">
+    I believe video is the foundation for AI that truly understands the world—and I've spent my PhD proving it.
   </p>
   
   <div style="margin-bottom: 20px;">
@@ -18,9 +19,13 @@ title: Home
       </p>
     </div>
     
-    <p>I am working on pre-training video-native LMMs at <a href="https://www.nvidia.com" target="_blank">NVIDIA</a>. At Meta, I led <a href="https://apollo-lmms.github.io" target="_blank">Apollo</a>, the first study demonstrating how to create LMMs that understand video. I am a PhD candidate at the <a href="https://svl.stanford.edu/" target="_blank">Stanford Vision Lab</a> and a <a href="https://knight-hennessy.stanford.edu/people/orr-zohar" target="_blank">Knight-Hennessy Scholar</a>. While there, I created <a href="https://arxiv.org/abs/2407.06189" target="_blank">Video-STaR</a>, the first method to train LMMs to reason over multimodal data, developed <a href="https://arxiv.org/abs/2504.05299" target="_blank">SmolVLM</a>, bringing state-of-the-art vision-language capabilities to mobile devices, and authored the definitive textbook on <a href="https://www.oreilly.com/library/view/vision-language-models/9798341624030/" target="_blank">Vision Language Models</a> with O'Reilly.</p>
+    <!-- Bio -->
+    <p style="margin-bottom: 15px;">I am a PhD candidate at the <a href="https://ai.stanford.edu/" target="_blank">Stanford AI Lab</a> and a <a href="https://knight-hennessy.stanford.edu" target="_blank">Knight-Hennessy Scholar</a>. Currently, I am at <a href="https://www.nvidia.com" target="_blank">NVIDIA</a>, studying how unified multimodal pre-training shapes foundation model capabilities—and how these representations transfer to physical world understanding.</p>
 
-    <p>I believe the path to physical AI runs through understanding the world first—through video, through multimodal learning, and through grounding models in reality. If you're building toward this future, <a href="https://forms.gle/HScVUBjZjRMFgtzZA" target="_blank"><b>reach out!</b></a></p>
+    <p style="margin-bottom: 15px;">At <a href="https://www.meta.com" target="_blank">Meta</a>, I led <a href="https://apollo-lmms.github.io" target="_blank">Apollo</a>, the first study of how to achieve video understanding in large multimodal models. I then created <a href="https://arxiv.org/abs/2504.05299" target="_blank">SmolVLM</a>, tiny vision-language models for image and video understanding small enough to deploy on-device—now powering <a href="https://apps.apple.com/app/huggingsnap/id6504768014" target="_blank">HuggingSnap</a> and <a href="https://huggingface.co/blog/smolvla" target="_blank">SmolVLA</a> for robotic action. I built <a href="https://arxiv.org/abs/2407.06189" target="_blank">Video-STaR</a>, the first method to train models to reason over video, <a href="https://arxiv.org/abs/2510.17269" target="_blank">FineVision</a>, the largest open VLM training corpus, and wrote the <a href="https://www.oreilly.com/library/view/vision-language-models/9798341624030/" target="_blank">O'Reilly textbook</a> on Vision Language Models.</p>
+
+    <p style="margin-bottom: 15px;">LLMs proved general systems beat task-specific engineering. The same shift is coming for the physical world—but it requires video: motion, causality, temporal structure. If you're thinking about where AI goes next, <a href="https://forms.gle/HScVUBjZjRMFgtzZA" target="_blank"><b>I'd like to talk.</b></a></p>
+
     <div style="clear: both;"></div>
   </div>
 
@@ -28,9 +33,11 @@ title: Home
 
 
 <!-- ========== NEWS ========== -->
-<div class="docs-section" id="news" >
+<div class="docs-section" id="news">
 <h4>News</h4>
   <ul class="STYLE238">
+    <li><b>[2026]:</b> Wrapping up at NVIDIA. Focused on what comes next.</li>
+
     <li><b>[2025/10]:</b> Released <a href="https://arxiv.org/abs/2510.17269" target="_blank">FineVision</a>, the largest open VLM training corpus with 24M samples.</li>
 
     <li><b>[2025/07]:</b> <a href="https://www.oreilly.com/library/view/vision-language-models/9798341624030/" target="_blank">Vision Language Models</a> book published by O'Reilly Media!</li>
@@ -45,7 +52,7 @@ title: Home
 
 <!-- ========== PUBLICATIONS ========== -->
 <div class="docs-section" id="publications">
-  <h4>Publications</h4>
+  <h4>Selected Research</h4>
 
   <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/>
   <sup>‡</sup> indicates equal contribution.
@@ -77,6 +84,9 @@ title: Home
 
             <p>{{ paper.authors }}</p>
             <p><i>{{ paper.venue }}</i></p>
+            {% if paper.insight %}
+            <p style="font-style: italic; color: #666; font-size: 0.9em; margin-top: 5px;">{{ paper.insight }}</p>
+            {% endif %}
             <div class="paper-buttons">
               {% if paper.project %}
                 <a class="button" href="{{ paper.project }}" target="_blank">project</a>
@@ -112,6 +122,10 @@ title: Home
 
               {% if paper.data %}
                 <a class="button" href="{{ paper.data }}" target="_blank">data</a>
+              {% endif %}
+
+              {% if paper.app %}
+                <a class="button" href="{{ paper.app }}" target="_blank">app</a>
               {% endif %}
 
               <!-- BibTeX Button -->
@@ -152,6 +166,9 @@ title: Home
 
             <p>{{ paper.authors }}</p>
             <p><i>{{ paper.venue }}</i></p>
+            {% if paper.insight %}
+            <p style="font-style: italic; color: #666; font-size: 0.9em; margin-top: 5px;">{{ paper.insight }}</p>
+            {% endif %}
             <div class="paper-buttons">
               {% if paper.project %}
                 <a class="button" href="{{ paper.project }}" target="_blank">project</a>
@@ -190,6 +207,10 @@ title: Home
                 <a class="button" href="{{ paper.data }}" target="_blank">data</a>
               {% endif %}
 
+              {% if paper.app %}
+                <a class="button" href="{{ paper.app }}" target="_blank">app</a>
+              {% endif %}
+
               <!-- BibTeX Button -->
               {% if paper.bibtex %}
                 <button class="button" onclick="toggleBibtex('all-bibtex-citation-{{ forloop.index }}')">bibtex</button>
@@ -210,81 +231,6 @@ title: Home
     </div>
   </div>
 </div>
-
-<!-- ========== PROJECTS ==========
-<div class="docs-section" id="projects">
-  <h4>Projects</h4>
-
-  <ul class="tab-nav">
-    <li><div class="button active" data-ref="#projects-selected">Selected</div></li>
-    <li><div class="button" data-ref="#projects-all">All</div></li>
-  </ul>
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="projects-selected">
-      {% assign selected_projects = site.data.projects.projects | where: "selected", "y" %}
-      {% for project in selected_projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="tab-pane" id="projects-all">
-      {% for project in site.data.projects.projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
-</div>
--->
 
 <!-- ========== RESUME ========== -->
 <div class="docs-section" id="resume">

@@ -2,6 +2,7 @@ papers:
   - title: "SmolVLM: Redefining small and efficient multimodal models"
     authors: "Andres Marafioti*, <b>Orr Zohar*</b>, Miquel Farré*, Merve Noyan, Pedro Cuenca, Cyril Zakka, Loubna Ben Allal, Anton Lozhkov, Nouamane Tazi, Vaibhav Srivastav, Joshua Lochner, Hugo Larcher, Mathieu Morlon, Lewis Tunstall, Leandro von Werra, Thomas Wolf"
     venue: "COLM (2025)"
+    insight: "On-device vision-language model powering HuggingSnap; foundation for SmolVLA robotics"
     arxiv: "https://arxiv.org/abs/2504.05299"
     bibtex: |
       @inproceedings{marafioti2025smolvlm,
@@ -12,6 +13,7 @@ papers:
       }
     myproject: "https://huggingface.co/blog/smolvlm2"
     code: "https://github.com/huggingface/smollm"
+    app: "https://apps.apple.com/app/huggingsnap/id6504768014"
     image: "/assets/publications/icons/smolvlm.png"
     selected: y
     ai: y
@@ -19,6 +21,7 @@ papers:
   - title: "FineVision: Open Data Is All You Need"
     authors: "Luis Wiedmann*, <b>Orr Zohar*</b>, Amir Mahla, Xiaohan Wang, Rui Li, Thibaud Frere, Leandro von Werra, Aritra Roy Gosthipaty, Andrés Marafioti"
     venue: "arXiv (2025)"
+    insight: "Largest open training corpus for vision-language models (24M samples)"
     arxiv: "https://arxiv.org/abs/2510.17269"
     bibtex: |
       @article{wiedmann2025finevision,
@@ -36,6 +39,7 @@ papers:
   - title: "Apollo: An Exploration of Video Understanding in Large Multimodal Models"
     authors: "<b>Orr Zohar</b>, Xiaohan Wang, Yann Dubois, Nikhil Mehta, Tong Xiao, Philippe Hansen-Estruch, Licheng Yu, Xiaofang Wang, Felix Juefei-Xu, Ning Zhang, Serena Yeung-Levy, and Xide Xia"
     venue: "CVPR 2025"
+    insight: "Established video—not images—as the key modality for temporal reasoning"
     arxiv: "https://arxiv.org/abs/2412.10360"
     bibtex: |
       @article{zohar2024apollo,
@@ -52,6 +56,7 @@ papers:
   - title: "Temporal Preference Optimization for Long-Form Video Understanding"
     authors: "Rui Li*, Xiaohan Wang*, Yuhui Zhang, <b>Orr Zohar</b>, Zeyu Wang, Serena Yeung-Levy"
     venue: "arXiv (2025)"
+    insight: "Learning precise temporal grounding through preference optimization"
     arxiv: "https://arxiv.org/abs/2501.13919"
     bibtex: |
       @article{li2025tpo,
@@ -70,6 +75,7 @@ papers:
   - title: "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision"
     authors: "<b>Orr Zohar</b>, Xiaohan Wang, Yonatan Bitton, Idan Szpektor, Serena Yeung-Levy"
     venue: "ICLR (2025)"
+    insight: "First method to train models to reason over video, not just describe it"
     arxiv: "https://arxiv.org/abs/2407.06189"
     bibtex: |
       @inproceedings{zohar2025videostar,
@@ -89,6 +95,7 @@ papers:
   - title: "VideoAgent: Long-form Video Understanding with Large Language Model as Agent"
     authors: "Xiaohan Wang*, Yuhui Zhang*, <b>Orr Zohar</b>, Serena Yeung-Levy"
     venue: "ECCV (2024)"
+    insight: "Long-form temporal reasoning through agentic architectures"
     arxiv: "https://arxiv.org/abs/2403.10517"
     paper_pdf: "https://arxiv.org/pdf/2403.10517.pdf"
     bibtex: |
