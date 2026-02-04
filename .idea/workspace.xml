@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e4d88cab-f4f8-4019-ac20-bb2a930c3771" name="Changes" comment="Updating publications">
+      <change afterPath="$PROJECT_DIR$/_projects/video-star/static/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_projects/video-star/static/images/pdf_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/publications/icons/videostar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/publications/videostar.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/jekyll-gh-pages.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/jekyll.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__deploy.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__redirect_mit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__redirect_su.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/experience.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/main_info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/projects.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/publications.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/google_analytics.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/image_with_caption.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/project.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/ai_surgery/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/video-star/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/ai_surgery/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/ai_surgery/static/css/bulma-carousel.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/video-star/static/css/bulma-carousel.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/ai_surgery/static/css/bulma-slider.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/video-star/static/css/bulma-slider.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/ai_surgery/static/css/bulma.css.map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/video-star/static/css/bulma.css.map.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/ai_surgery/static/css/bulma.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/video-star/static/css/bulma.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/ai_surgery/static/css/fontawesome.all.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/video-star/static/css/fontawesome.all.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/ai_surgery/static/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/ai_surgery/static/images/Method.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/ai_surgery/static/images/Results1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/ai_surgery/static/images/Results2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/ai_surgery/static/images/favicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/video-star/static/images/favicon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/ai_surgery/static/js/bulma-carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/video-star/static/js/bulma-carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/ai_surgery/static/js/bulma-carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/video-star/static/js/bulma-carousel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/ai_surgery/static/js/bulma-slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/video-star/static/js/bulma-slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/ai_surgery/static/js/bulma-slider.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/video-star/static/js/bulma-slider.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/ai_surgery/static/js/fontawesome.all.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/video-star/static/js/fontawesome.all.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/ai_surgery/static/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/video-star/static/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/fomo/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/fomo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/video-star/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/fomo/static/css/bulma-carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/fomo/static/css/bulma-slider.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/fomo/static/css/bulma.css.map.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/fomo/static/css/bulma.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/fomo/static/css/fontawesome.all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/fomo/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/_projects/video-star/static/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/fomo/static/images/Method.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/fomo/static/images/Method.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/fomo/static/images/favicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/fomo/static/images/qual_examples_2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/fomo/static/images/qual_examples_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/fomo/static/images/quant_results.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/fomo/static/js/bulma-carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/fomo/static/js/bulma-carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/fomo/static/js/bulma-slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/fomo/static/js/bulma-slider.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/fomo/static/js/fontawesome.all.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/fomo/static/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/lovm/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/lovm/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/lovm/static/css/bulma-carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/lovm/static/css/bulma-slider.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/lovm/static/css/bulma.css.map.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/lovm/static/css/bulma.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/lovm/static/css/fontawesome.all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/lovm/static/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/lovm/static/images/Application.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/lovm/static/images/Method.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/lovm/static/images/Motivation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/lovm/static/images/Table.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/lovm/static/images/Task.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/lovm/static/images/favicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/lovm/static/images/poll.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/lovm/static/js/bulma-carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/lovm/static/js/bulma-carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/lovm/static/js/bulma-slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/lovm/static/js/bulma-slider.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/lovm/static/js/fontawesome.all.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/lovm/static/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/prob/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/prob/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/prob/static/css/bulma-carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/prob/static/css/bulma-slider.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/prob/static/css/bulma.css.map.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/prob/static/css/bulma.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/prob/static/css/fontawesome.all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/prob/static/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/prob/static/images/favicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/prob/static/images/method.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/prob/static/images/qual_examples_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/prob/static/images/quant_results.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/prob/static/js/bulma-carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/prob/static/js/bulma-carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/prob/static/js/bulma-slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/prob/static/js/bulma-slider.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/prob/static/js/fontawesome.all.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_projects/prob/static/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/cv/cv_web.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/profile-pics/SU.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/profile-pics/SU_small.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/publications/icons/AdvMat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/publications/icons/AdvMatRev.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/publications/icons/afm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/publications/icons/amdt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/publications/icons/apl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/publications/icons/fomo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/publications/icons/fomo.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/publications/icons/lovm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/publications/icons/optexpress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/publications/icons/prob.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/publications/icons/scirep.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/publications/icons/surgery.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/publications/icons/videoagent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/publications/icons/view.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/css/bulma-carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/css/bulma-slider.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/css/bulma.css.map.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/css/bulma.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/css/fontawesome.all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/custom/my_css.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/custom/my_js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/academicons-1.8.6/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/academicons-1.8.6/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/academicons-1.8.6/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/academicons-1.8.6/css/academicons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/academicons-1.8.6/css/academicons.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/academicons-1.8.6/fonts/academicons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/academicons-1.8.6/fonts/academicons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/academicons-1.8.6/fonts/academicons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/academicons-1.8.6/fonts/academicons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/jquery-3.1.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/skeleton/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/skeleton/skeleton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/skeleton_tabs/skeleton-tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/skeleton_tabs/skeleton-tabs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/external/timeline.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/js/bulma-carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/js/bulma-carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/js/bulma-slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/js/bulma-slider.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/js/fontawesome.all.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/webfonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/webfonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/webfonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/webfonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/webfonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/webfonts/fa-solid-900.woff2" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2enZMaNg6mTGhhYPBwXfS5LD5NC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/orrzohar/Documents/website/assets/publications&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/publications" />
+      <recent name="$PROJECT_DIR$/assets/publications/icons" />
+      <recent name="$PROJECT_DIR$/_projects" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_projects/video_star/static/images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e4d88cab-f4f8-4019-ac20-bb2a930c3771" name="Changes" comment="" />
+      <created>1712542255402</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712542255402</updated>
+      <workItem from="1712542257015" duration="887000" />
+      <workItem from="1716928489746" duration="4538000" />
+      <workItem from="1717133953079" duration="1498000" />
+      <workItem from="1717435080557" duration="583000" />
+      <workItem from="1718215249469" duration="1962000" />
+      <workItem from="1718504024014" duration="11630000" />
+      <workItem from="1718650054183" duration="6381000" />
+      <workItem from="1720082828733" duration="666000" />
+    </task>
+    <task id="LOCAL-00001" summary="Updating publications">
+      <created>1712542544331</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712542544331</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updating publications" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating publications" />
+  </component>
+</project>

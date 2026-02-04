@@ -2,7 +2,7 @@ papers:
   - title: "SmolVLM: Redefining small and efficient multimodal models"
     authors: "Andres Marafioti*, <b>Orr Zohar*</b>, Miquel Farré*, Merve Noyan, Pedro Cuenca, Cyril Zakka, Loubna Ben Allal, Anton Lozhkov, Nouamane Tazi, Vaibhav Srivastav, Joshua Lochner, Hugo Larcher, Mathieu Morlon, Lewis Tunstall, Leandro von Werra, Thomas Wolf"
     venue: "COLM (2025)"
-    insight: "On-device vision-language model powering HuggingSnap; foundation for SmolVLA robotics"
+    insight: "One of the smallest LMMs for image + video—runs on web browsers and iPhones; powers HuggingSnap and SmolVLA for robot control"
     arxiv: "https://arxiv.org/abs/2504.05299"
     bibtex: |
       @inproceedings{marafioti2025smolvlm,
@@ -39,7 +39,7 @@ papers:
   - title: "Apollo: An Exploration of Video Understanding in Large Multimodal Models"
     authors: "<b>Orr Zohar</b>, Xiaohan Wang, Yann Dubois, Nikhil Mehta, Tong Xiao, Philippe Hansen-Estruch, Licheng Yu, Xiaofang Wang, Felix Juefei-Xu, Ning Zhang, Serena Yeung-Levy, and Xide Xia"
     venue: "CVPR 2025"
-    insight: "Established video—not images—as the key modality for temporal reasoning"
+    insight: "First work exploring video understanding in large multimodal models"
     arxiv: "https://arxiv.org/abs/2412.10360"
     bibtex: |
       @article{zohar2024apollo,
@@ -75,7 +75,7 @@ papers:
   - title: "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision"
     authors: "<b>Orr Zohar</b>, Xiaohan Wang, Yonatan Bitton, Idan Szpektor, Serena Yeung-Levy"
     venue: "ICLR (2025)"
-    insight: "First method to train models to reason over video, not just describe it"
+    insight: "First work exploring video reasoning and self-training in large multimodal models"
     arxiv: "https://arxiv.org/abs/2407.06189"
     bibtex: |
       @inproceedings{zohar2025videostar,

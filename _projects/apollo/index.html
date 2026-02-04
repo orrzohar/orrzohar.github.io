@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Apollo: An Exploration of Video Understanding in Large Multimodal Models">
+  <meta name="keywords" content="Video Understanding, Large Multimodal Models, Apollo, Scaling Consistency, Video-LMMs">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apollo: Video Understanding in LMMs</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- (Your Google Analytics script here) -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="../../libs/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="../../libs/icon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+<style>
+  .gradient-background {
+    background: linear-gradient(to bottom, lightblue 50%, white 50%);
+  }
+  .hero.is-light {
+    background-color: #f5f5f5;
+  }
+  .author-block a {
+    text-decoration: none;
+  }
+  .content img {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="../../">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">More Research</a>
+        <div class="navbar-dropdown">
+          <!-- Additional projects can be listed here -->
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- /Navigation Bar -->
+
+<!-- Hero Section -->
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Apollo: An Exploration of Video Understanding in Large Multimodal Models</h1>
+          <div class="is-size-5 publication-authors">
+  <span class="author-block">
+    <a href="https://orrzohar.github.io">Orr Zohar</a><sup>1,2,†</sup>,
+  </span>
+  <span class="author-block">
+    <a href="https://wxh1996.github.io">Xiaohan Wang</a><sup>2</sup>,
+  </span>
+  <span class="author-block">
+    <a href="https://yanndubs.github.io/">Yann Dubois</a><sup>2</sup>,
+  </span>
+  <span class="author-block">
+    <a href="https://hockeybro12.github.io">Nikhil Mehta</a><sup>1</sup>,
+  </span>
+  <span class="author-block">
+    <a href="http://xiaotong.me">Tong Xiao</a><sup>1</sup>,
+  </span>
+  <span class="author-block">
+    <a href="https://philippe-eecs.github.io/website/">Philippe Hansen-Estruch</a><sup>1</sup>,
+  </span>
+  <span class="author-block">
+    <a href="https://lichengunc.github.io">Licheng Yu</a><sup>1</sup>,
+  </span>
+  <span class="author-block">
+    <a href="https://minione.github.io">Xiaofang Wang</a><sup>1</sup>,
+  </span>
+  <span class="author-block">
+    <a href="https://xujuefei.com">Felix Juefei-Xu</a><sup>1</sup>,
+  </span>
+  <span class="author-block">
+    <a href="https://n-zhang.github.io">Ning Zhang</a><sup>1</sup>,
+  </span>
+  <span class="author-block">
+    <a href="https://ai.stanford.edu/~syyeung/">Serena Yeung-Levy</a><sup>2</sup>,
+  </span>
+  <span class="author-block">
+    <a href="https://xidexia.github.io">Xide Xia</a><sup>1</sup>
+  </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup></sup>Stanford University,</span>
+            <span class="author-block"><sup></sup>Meta GenAI</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2407.06189"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2407.06189"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <img src="./static/images/pdf_icon.png" alt="PDF Icon" style="height: 1em; width: 1em;">
+                  </span>
+                  <span>PDF</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/orrzohar/Apollo"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/datasets/orrzohar/Apollo"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <p style="font-size:20px">🤗</p>
+                  </span>
+                  <span>Dataset</span>
+                  </a>
+              </span>
+              <!-- Demo Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/spaces/orrzohar/Apollo"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <p style="font-size:20px">🤗</p>
+                  </span>
+                  <span>Demo</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /hero-body -->
+</section>
+<!-- /Hero Section -->
+
+<!-- Abstract Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Video-Large Multimodal Models (Video-LMMs) lag behind their image and language counterparts due to high computational demands and a complex design space. In this work, we introduce <strong>Apollo</strong>, a family of state-of-the-art video-LMMs that achieve superior performance while being computationally efficient. We systematically explore the design space of video-LMMs, identifying key strategies in video sampling, token resampling, and integration. We also propose the concept of <strong>Scaling Consistency</strong>, demonstrating that design decisions validated on smaller models reliably transfer to larger ones. Additionally, we present <strong>ApolloBench</strong>, a cost-efficient evaluation suite that accelerates research. Apollo models outperform existing larger models across multiple benchmarks, setting a new standard in video understanding.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Abstract Section -->
+
+<!-- Introduction Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-justified">
+          <h2 class="title is-3">💡 Introduction</h2>
+          <p>
+            Video understanding in Large Multimodal Models (LMMs) presents significant challenges due to high computational costs and a vast, complex design space. Unlike image and language models, video-LMMs require efficient strategies for sampling and encoding temporal data. Existing methods often extend image-based models to video without fully understanding the impact of design choices on performance.
+          </p>
+          <p>
+            In our work, we introduce <strong>Apollo</strong>, a family of video-centric LMMs that excel in performance while maintaining computational efficiency. We conduct a systematic exploration of the video-LMM design space, focusing on critical aspects such as video sampling methods, encoder selection, token resampling, and integration strategies. Our research identifies effective practices that significantly enhance model performance.
+          </p>
+          <p>
+            We also propose the concept of <strong>Scaling Consistency</strong>, which demonstrates that design decisions made on moderately sized models (2–4 billion parameters) and datasets reliably transfer to larger models. This insight allows for more efficient research and development by reducing computational overhead.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Introduction Section -->
+
+<!-- Key Findings Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns">
+      <div class="column is-full-width">
+        <h2 class="title is-3">🔑 Key Findings</h2>
+        <div class="content">
+          <ul>
+            <li><strong>Finding 1:</strong> Scaling Consistency enables reliable design decisions on smaller models and datasets, transferring effectively to larger models.</li>
+            <li><strong>Finding 2:</strong> FPS-based video sampling significantly outperforms uniform sampling in both training and inference.</li>
+            <li><strong>Finding 3:</strong> Optimal performance is achieved with 8–32 tokens per frame, balancing frame rate and token count.</li>
+            <li><strong>Finding 4:</strong> The SigLIP-SO400M image encoder outperforms video encoders in single-encoder setups for video-LMMs.</li>
+            <li><strong>Finding 5:</strong> Combining SigLIP-SO400M with a video encoder like InternVideo2 yields the best overall performance.</li>
+            <li><strong>Finding 6:</strong> The Perceiver Resampler is the most effective method for token resampling.</li>
+            <li><strong>Finding 7:</strong> Incorporating contextual tokens (e.g., timestamps) between video clips enhances token integration efficiency.</li>
+            <li><strong>Finding 8:</strong> Multi-stage training schedules with progressive unfreezing lead to superior performance.</li>
+            <li><strong>Finding 9:</strong> Fine-tuning video encoders exclusively on video data improves temporal reasoning tasks.</li>
+            <li><strong>Finding 10:</strong> Including 10–14% text data in training maintains language comprehension while optimizing video understanding.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Key Findings Section -->
+
+<!-- Figures Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns">
+      <div class="column is-full-width">
+        <h2 class="title is-3">📊 Figures and Visualizations</h2>
+        <div class="content">
+          <figure>
+            <img src="./static/images/figure1.png" alt="Figure 1">
+            <figcaption><strong>Figure 1:</strong> Overview of the design exploration highlighting key components like video sampling, encoder selection, and evaluation protocols.</figcaption>
+          </figure>
+          <figure>
+            <img src="./static/images/figure3.png" alt="Figure 3">
+            <figcaption><strong>Figure 3:</strong> Left panel shows R² values between different model sizes and a 7B model, indicating a log-linear relationship. Right panel illustrates the effect of dataset size on correlation.</figcaption>
+          </figure>
+          <!-- Add more figures as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Figures Section -->
+
+<!-- Apollo Model Family Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns">
+      <div class="column is-full-width">
+        <h2 class="title is-3">🚀 Apollo Model Family</h2>
+        <div class="content">
+          <p>
+            The <strong>Apollo</strong> models are built upon the insights gained from our systematic exploration. They employ a dual-encoder architecture, combining the strengths of both image and video encoders. The Perceiver Resampler is used for efficient token resampling, and contextual tokens like timestamps enhance token integration.
+          </p>
+          <p>
+            We trained Apollo models using a three-stage training schedule, progressively unfreezing components to optimize performance. The training data is carefully composed, including 10–14% text data and a video-heavy balance of the remaining modalities.
+          </p>
+          <p>
+            Despite their moderate sizes (1.5B, 3B, and 7B parameters), Apollo models outperform larger existing models across multiple benchmarks, demonstrating the effectiveness of our design and training strategies.
+          </p>
+          <figure>
+            <img src="./static/images/apollo_model.png" alt="Apollo Model Architecture">
+            <figcaption><strong>Figure:</strong> Apollo Model Architecture combining dual encoders and Perceiver Resampler.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Apollo Model Family Section -->
+
+<!-- Performance Evaluation Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns">
+      <div class="column is-full-width">
+        <h2 class="title is-3">⚖️ Performance Evaluation</h2>
+        <div class="content">
+          <p>
+            Apollo models were evaluated across several benchmarks, including TempCompass, MLVU, Video-MME, LongVideoBench, and our own ApolloBench. The results demonstrate that Apollo models set new standards in video understanding tasks.
+          </p>
+          <table class="table is-striped is-fullwidth">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>Parameters</th>
+                <th>MLVU Score</th>
+                <th>ApolloBench Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Apollo-1.5B</td>
+                <td>1.5B</td>
+                <td>65.2</td>
+                <td>58.7</td>
+              </tr>
+              <tr>
+                <td>Apollo-3B</td>
+                <td>3B</td>
+                <td>68.7</td>
+                <td>62.7</td>
+              </tr>
+              <tr>
+                <td>Apollo-7B</td>
+                <td>7B</td>
+                <td>70.9</td>
+                <td>66.3</td>
+              </tr>
+              <!-- Add more rows as needed -->
+            </tbody>
+          </table>
+          <p>
+            As shown in the table, Apollo-7B outperforms larger models like Oryx-34B and VILA1.5-40B, highlighting the efficiency and effectiveness of our approach.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Performance Evaluation Section -->
+
+<!-- ApolloBench Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns">
+      <div class="column is-full-width">
+        <h2 class="title is-3">🧪 ApolloBench</h2>
+        <div class="content">
+          <p>
+            We introduce <strong>ApolloBench</strong>, a cost-efficient evaluation suite designed to test video perception in LMMs effectively. ApolloBench focuses on questions that require video understanding across five domains: Temporal OCR, Egocentric, Spatial, Perception, and Reasoning. It provides a 41× faster evaluation process while maintaining strong correlation with existing benchmarks.
+          </p>
+          <figure>
+            <img src="./static/images/apollo_bench.png" alt="ApolloBench Illustration">
+            <figcaption><strong>Figure:</strong> ApolloBench focuses on critical video perception tasks with reduced redundancy.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /ApolloBench Section -->
+
+<!-- Conclusion Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">🔚 Conclusion</h2>
+        <div class="content has-text-justified">
+          <p>
+            Our exploration into video understanding in LMMs has led to significant advancements in model design and training strategies. The Apollo models set new benchmarks in performance while remaining computationally efficient. The concept of Scaling Consistency provides a framework for future research, enabling effective design decisions without prohibitive computational costs. We believe these contributions will pave the way for more robust and accessible video-LMMs in the research community.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Conclusion Section -->
+
+<!-- BibTeX Section -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">📖 BibTeX</h2>
+    <pre><code>@article{zohar2023apollo,
+  title={Apollo: An Exploration of Video Understanding in Large Multimodal Models},
+  author={Zohar, Orr and Wang, Xiaohan and Bitton, Yonatan and Szpektor, Idan and Yeung-Levy, Serena},
+  journal={arXiv preprint arXiv:2307.XXXX},
+  year={2023}
+}</code></pre>
+  </div>
+</section>
+<!-- /BibTeX Section -->
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>. The website template is adapted from the <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page.
+          </p>
+          <p>
+            © 2023 Stanford University and Meta GenAI
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /Footer -->
+
+</body>
+</html>
