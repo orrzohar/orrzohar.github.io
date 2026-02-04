@@ -53,7 +53,6 @@ title: Home
 
   <ul class="tab-nav">
     <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
-    <li><div class="button" data-ref="#papers-ai">AI</div></li>
     <li><div class="button" data-ref="#papers-all">All</div></li>
   </ul>
 
@@ -120,82 +119,6 @@ title: Home
                 <button class="button" onclick="toggleBibtex('selected-bibtex-citation-{{ forloop.index }}')">bibtex</button>
                 <!-- Hidden BibTeX citation div -->
                 <div id="selected-bibtex-citation-{{ forloop.index }}" class="bibtex-citation-content" style="display: none;">
-                  <!-- The actual BibTeX citation -->
-                  <pre>{{ paper.bibtex }}</pre>
-                </div>
-              {% endif %}
-              {% if paper.code_star %}
-              <img src='{{ site.baseurl }}{{ paper.code_star }}' height="20%" >
-              {% endif %}
-            </div>
-          </div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-
-    <div class="tab-pane" id="papers-ai">
-      {% assign ai_papers = site.data.publications.papers | where: "ai", "y" %}
-      {% for paper in ai_papers %}
-      <div class="paper">
-        <div class="row" style="display: flex;align-items: center;">
-          <div class="four columns">
-            <div class="figure">
-              <img src="{{ paper.image | prepend: site.baseurl}}" width="100%">
-            </div>
-          </div>
-          <div class="eight columns">
-            {% if paper.highlight %}
-            <p class="title" style="color: #07c63c;"><b>{{ paper.title }}</b></p>
-            {% else %}
-            <p class="title"><b>{{ paper.title }}</b></p>
-            {% endif %}
-
-            <p>{{ paper.authors }}</p>
-            <p><i>{{ paper.venue }}</i></p>
-            <div class="paper-buttons">
-              {% if paper.project %}
-                <a class="button" href="{{ paper.project }}" target="_blank">project</a>
-              {% endif %}
-
-              {% if paper.myproject %}
-                <a class="button" href="{{ paper.myproject | prepend: site.baseurl }}">project</a>
-              {% endif %}
-
-              {% if paper.proceedings %}
-                <a class="button" href="{{ paper.proceedings }}" target="_blank">proceeding</a>
-              {% endif %}
-
-              {% if paper.arxiv %}
-                <a class="button" href="{{ paper.arxiv }}" target="_blank">arxiv</a>
-              {% endif %}
-
-
-              {% if paper.slides %}
-                <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">slides</a>
-              {% endif %}
-
-              {% if paper.poster %}
-                <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">poster</a>
-              {% endif %}
-
-              {% if paper.video %}
-                <a class="button" href="{{ paper.video }}" target="_blank">video</a>
-              {% endif %}
-
-              {% if paper.code %}
-                <a class="button" href="{{ paper.code }}" target="_blank">code</a>
-              {% endif %}
-
-              {% if paper.data %}
-                <a class="button" href="{{ paper.data }}" target="_blank">data</a>
-              {% endif %}
-
-              <!-- BibTeX Button -->
-              {% if paper.bibtex %}
-                <button class="button" onclick="toggleBibtex('ai-bibtex-citation-{{ forloop.index }}')">bibtex</button>
-                <!-- Hidden BibTeX citation div -->
-                <div id="ai-bibtex-citation-{{ forloop.index }}" class="bibtex-citation-content" style="display: none;">
                   <!-- The actual BibTeX citation -->
                   <pre>{{ paper.bibtex }}</pre>
                 </div>
