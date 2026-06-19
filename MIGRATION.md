@@ -7,14 +7,24 @@ This repository is pulled onto the Stanford server so the same content appears a
 2. If the Stanford site is served directly from this repo, no additional build step is needed.
 3. Verify that the Stanford URL loads as expected after the pull.
 
-## Redirect behavior for `https://orrzohar.github.io/`
-The GitHub Pages deployment is handled by `.github/workflows/redirect.yml`, which generates a minimal `_site/index.html` containing:
-- `noindex,follow` meta tags (robots + googlebot)
-- canonical link to the Stanford URL
-- immediate meta refresh to the Stanford URL
-- a fallback body link
+## Canonical / SEO setup (so Google indexes the Stanford page, not github.io)
+The Stanford pages are the canonical, indexable copy. The GitHub Pages site is a redirect that
+*passes its authority* to Stanford. Two things make this work and must stay consistent:
 
-If any of these requirements change, update the heredoc in the workflow and re-deploy.
+1. **Stanford build self-canonicalizes.** `_layouts/default.html` emits a per-page
+   `rel="canonical"` and `og:url` built from `{{ site.url }}{{ site.baseurl }}{{ page.url }}`
+   (i.e. `https://ai.stanford.edu/~orrzohar/...`). `url` and `baseurl` are set in `_config.yml`.
+   Do **not** hardcode `orrzohar.github.io` here — that was the bug that caused Stanford to be
+   de-indexed in favor of github.io.
+2. **github.io redirects without `noindex`.** `.github/workflows/redirect.yml` generates a minimal
+   `_site/index.html` with a `canonical` to the Stanford URL + an instant (`0;`) meta refresh to it.
+   Google treats an instant meta refresh as a *permanent* redirect and consolidates signals onto
+   Stanford. Do **not** re-add `noindex` — that tells Google to drop the page instead of passing
+   its authority to Stanford.
+
+Deploy order matters: deploy/pull the Stanford self-canonical change **first**, then let the
+github.io redirect (no-noindex) deploy. Then request indexing in Google Search Console for both
+`https://ai.stanford.edu/~orrzohar/` and `https://orrzohar.github.io/`.
 
 ## Visitor tracking (analytics)
 Because `https://orrzohar.github.io/` is only a redirect with `noindex`, visitor tracking should be implemented on the **Stanford** site, not the GitHub Pages redirect.

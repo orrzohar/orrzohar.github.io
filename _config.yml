@@ -1,7 +1,8 @@
 source:      .
 destination: ./_site
 includes:    ./_includes
-baseurl: "/~orrzohar"  # Use "" for GitHub Pages, or "/~orrzohar" for Stanford
+url: "https://ai.stanford.edu"   # canonical host for this (Stanford-served) build
+baseurl: "/~orrzohar"            # Stanford user-dir path; orrzohar.github.io is now redirect-only
 
 collections:
   projects:
