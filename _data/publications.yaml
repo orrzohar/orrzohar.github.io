@@ -111,6 +111,40 @@ papers:
     selected: y
     ai: y
 
+  - title: "ViTok-v2: Scaling Native Resolution Auto-Encoders to 5 Billion Parameters"
+    authors: "Philippe Hansen-Estruch, Jiahui Chen, Vivek Ramanujan, <b>Orr Zohar</b>, Yan Ping, Animesh Sinha, Markos Georgopoulos, Edgar Schoenfeld, Ji Hou, Felix Juefei-Xu, Sriram Vishwanath, Ali Thabet"
+    venue: "arXiv preprint (2026)"
+    arxiv: "https://arxiv.org/abs/2605.05331"
+    bibtex: |
+      @article{hansenestruch2026vitokv2,
+        title={ViTok-v2: Scaling Native Resolution Auto-Encoders to 5 Billion Parameters},
+        author={Philippe Hansen-Estruch and Jiahui Chen and Vivek Ramanujan and Orr Zohar and Yan Ping and Animesh Sinha and Markos Georgopoulos and Edgar Schoenfeld and Ji Hou and Felix Juefei-Xu and Sriram Vishwanath and Ali Thabet},
+        journal={arXiv preprint arXiv:2605.05331},
+        year={2026}
+      }
+    image: "/assets/publications/icons/vitok2.png"
+    selected: n
+    ai: y
+
+  - title: "A benchmark of expert-level academic questions to assess AI capabilities"
+    authors: "Long Phan, Alice Gatti, Ziwen Han, Nathaniel Li, et al. (incl. <b>Orr Zohar</b>)"
+    venue: "Nature (2026)"
+    arxiv: "https://arxiv.org/abs/2501.14249"
+    proceedings: "https://www.nature.com/articles/s41586-025-09962-4"
+    bibtex: |
+      @article{phan2026benchmark,
+        title={A benchmark of expert-level academic questions to assess AI capabilities},
+        author={Phan, Long and Gatti, Alice and Han, Ziwen and Li, Nathaniel and Hu, Josephina and others},
+        journal={Nature},
+        volume={649},
+        pages={1139--1146},
+        year={2026},
+        doi={10.1038/s41586-025-09962-4}
+      }
+    image: "/assets/publications/icons/hle.png"
+    selected: n
+    ai: y
+
   - title: "Learnings from Scaling Visual Tokenizers for Reconstruction and Generation"
     authors: "Philippe Hansen-Estruch, David Yan, Ching-Yao Chung,<b>Orr Zohar</b>, Jialiang Wang, Tingbo Hou, Tao Xu, Sriram Vishwanath, Peter Vajda, Xinlei Chen"
     venue: "arXiv preprint (2025)"
